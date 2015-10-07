@@ -74,7 +74,7 @@
     "yorkbutter" : {
         "displayName": "York Butter Factory",
         "href": "http://yorkbutterfactory.com",
-        "img": "yorkbutter.png",
+        "img": "yorkbutter.jpg",
         "text": "The York Butter Factory is the premier co-working and incubation space for Melbourne's high-potential early-stage technology entrepreneurs. Established in 2011 inside an 1850s heritage listed space, York Butter Factory is home to startups with bold and global ambitions to change the world.",
         "location": ["melbourne"],
         "scope": "local",
@@ -130,6 +130,15 @@
         "href": "http://www.csiro.au/en/Research/D61",
         "img": "data61.png",
         "text": "Data61 is the largest data innovation group in Australia. Bringing together our Digital Productivity team and National ICT Australia (NICTA), we are unrivalled in our intellectual capital and our network with the global technology marketplace.",
+        "location": ["brisbane","perth","sydney","melbourne"],
+        "scope": "national",
+        "type": "gold"
+    },
+    "vptn" : {
+        "displayName": "VPTN",
+        "href": "http://platformtechnologies.org/",
+        "img": "vptn.jpg",
+        "text": "Established in 2009, the Victorian Platform Technologies Network (VPTN) plays a key role in connecting publicly-funded facilities in Victoria with industry and researchers. Through its online services - ARIN and PlatformConnect - VPTN is unique in offering a centralised, open and cross-institutional network of over 140 platform technologies across more than 30 institutions. The VPTN is an initiative supported by the Victorian Government, Biomedical Research Victoria and Monash University.",
         "location": ["brisbane","perth","sydney","melbourne"],
         "scope": "national",
         "type": "gold"
