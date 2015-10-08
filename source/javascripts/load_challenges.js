@@ -57,7 +57,7 @@ load_challenges = function(target_year) {
                             desc_text += desc_line + "<br><br>";
                         });
                     }
-				    panel.find("div.challenge-data p.description").html(challenge.description);
+				    panel.find("div.challenge-data p.description").html(desc_text);
 				}
 				
 				//	panel.find("div.challenge-data a.team").attr("href", challenge.teamLink);
