@@ -51,7 +51,7 @@ load_challenges = function(target_year) {
 			    if(challenge.description) {
                     var desc_text = "";
                     if (sheetsu) {
-                        desc_text = challenge.descrption;
+                        desc_text = challenge.description.replace(/\n\n/g, '<br/>');
                     } else {
                         $.each(challenge.description, function (index, desc_line) {
                             desc_text += desc_line + "<br><br>";
