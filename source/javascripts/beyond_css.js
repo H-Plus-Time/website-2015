@@ -62,18 +62,18 @@ load_sponsors = function(load_data, names, site_name, page_type) {
                     } else {                    
                         $("#"+s_name+"-img-div").addClass("sponsor-img-div");
                         $("#"+s_name+"-block").addClass("col-xs-12");
-                        var $text_div = $("<div>", { "html": sponsor_data["text"] });
+                        var $text_div = $("<div>", { "html": sponsor_data["text"], "class": "sponsor-logo-text-div" });
                         $text_div.insertAfter("#"+s_name+"-img-div");
                     }
                 }
             });
             equalheight('.sponsor-block-cn');
-            centrewithin('.sponsor-block-cn');
+            //centrewithin('.sponsor-block-cn');
         });
 
     } else {
         equalheight('.sponsor-block-cn');
-        centrewithin('.sponsor-block-cn');
+        //centrewithin('.sponsor-block-cn');
     }
 };
 
