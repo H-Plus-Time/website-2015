@@ -1,7 +1,13 @@
 load_challenges = function(target_year) { 
-	$.get("data/challenges.json", function(data) {
+    var sheetsu = (target_year >= 2015);
+	$.get(sheetsu ? "https://sheetsu.com/apis/bee3ab30" : 'data/challenges.json', function(data) {
+        if (sheetsu && !data.success) {
+            alert("Couldn't load challenges, status " + data.status);
+            console.log(data);
+            return false;
+        }
 		var template = $("div.challenge-row");
-		$.each (data.challenges, function(index, challenge) {
+		$.each (sheetsu ? data.result : data.challenges, function(index, challenge) {
 			if(challenge.year == target_year) {
 				var panel = template.clone();
 				var custom_row_id = "challenge-row-"+index;
@@ -29,7 +35,8 @@ load_challenges = function(target_year) {
 				panel.find("#challenge-page-container").attr("id", custom_id);
 
 				if (challenge.organisationImg) {
-					panel.find("div.challenge-title img.sponsor").attr("src", 'images/' + challenge.organisationImg);
+                    var prefix = (challenge.organisationImg.match(/^http/) ? '' : 'images/');
+					panel.find("div.challenge-title img.sponsor").attr("src", prefix + challenge.organisationImg);
 					panel.find("div.challenge-title img.sponsor").attr("alt", challenge.organisation);
 				}
 				else {
@@ -40,13 +47,17 @@ load_challenges = function(target_year) {
 				panel.find("div.organiser-details p").text("Presented by " + challenge.presenters);
 				panel.find("div.organiser-details a").text(challenge.organisation);
 				panel.find("div.organiser-details a").attr("href", challenge.organisationLink);
-
-				var desc_text = "";
+				
 			    if(challenge.description) {
-				  $.each(challenge.description, function (index, desc_line) {
-					desc_text += desc_line + "<br><br>";
-				  });
-				  panel.find("div.challenge-data p.description").html(desc_text);
+                    var desc_text = "";
+                    if (sheetsu) {
+                        desc_text = challenge.description.replace(/\n/g, '<br/>');
+                    } else {
+                        $.each(challenge.description, function (index, desc_line) {
+                            desc_text += desc_line + "<br><br>";
+                        });
+                    }
+				    panel.find("div.challenge-data p.description").html(desc_text);
 				}
 				
 				//	panel.find("div.challenge-data a.team").attr("href", challenge.teamLink);
@@ -92,8 +103,8 @@ load_challenges = function(target_year) {
 				   		$('#' + custom_id).fadeOut("slow");
 			 	 	});
 			    }
+                $("#challenge-list div.list").append(panel);
 			}
-			$("#challenge-list div.list").append(panel);
 		});
 
 		$("#challenge-row-template").remove();
