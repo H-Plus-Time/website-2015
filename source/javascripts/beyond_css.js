@@ -13,7 +13,6 @@ equalheight = function(container) {
 
         if (currentRowStart != topPostion) {
             for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-                console.log(currentTallest, topPostion, rowDivs[currentDiv])
                 rowDivs[currentDiv].height(currentTallest);
             }
             rowDivs.length = 0; // empty the array
@@ -41,6 +40,14 @@ centrewithin = function(container) {
 };
 
 load_sponsors = function(load_data, names, site_name, page_type) {
+    // keep count of sponsor types so we know which decorators to remove
+    var type_counts = {
+                        "national-gold" : 0,
+                        "national-silver" : 0,
+                        "community-gold" : 0,
+                        "community-silver" : 0,
+                        "community-standard" : 0
+                      }
     if  (load_data) {
         $.get("./data/sponsors.json", function(data) {
             var sn = site_name.toLowerCase();
@@ -57,7 +64,8 @@ load_sponsors = function(load_data, names, site_name, page_type) {
                     // only allow gold, platinum or national sponsors on the main small logos section
                     if("gold" == sponsor_data["type"] || "platinum" == sponsor_data["type"]) {
                         $("#"+s_name+"-img-div").addClass("sponsor-logo-img-div");      // half width logos
-                        $("#"+s_name+"-block").addClass("col-xs-6");                        
+                        $("#"+s_name+"-block").addClass("col-xs-6"); 
+                        type_counts[sponsor_data["scope"]+"-"+sponsor_data["type"]] ++;
                     } else {
                         $("#"+s_name+"-block").remove();
                     }
@@ -69,7 +77,14 @@ load_sponsors = function(load_data, names, site_name, page_type) {
                         $("#"+s_name+"-block").addClass("col-xs-12");
                         var $text_div = $("<div>", { "html": sponsor_data["text"], "class": "sponsor-logo-text-div" });
                         $text_div.insertAfter("#"+s_name+"-img-div");
+                        type_counts[sponsor_data["scope"]+"-"+sponsor_data["type"]] ++;
                     }
+                }
+            });
+            // remove any un-needed decorators 
+            $.each(type_counts, function(cls, count) {
+                if(0 == count) {
+                    $("#decorator-"+cls).remove();
                 }
             });
             equalheight('.sponsor-block-cn');
