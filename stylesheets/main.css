@@ -1,8 +1,8 @@
-/* line 5, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 5, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .container-white-background {
   background-color: white; }
 
-/* line 10, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 10, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .thin-container-normal {
   height: 100%;
   text-align: center;
@@ -12,22 +12,22 @@
   margin: 0 auto;
   padding: 40px 0 80px 0;
   color: black; }
-  /* line 19, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 19, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .thin-container-normal .col-md-4, .thin-container-normal .col-xs-6 {
     padding-top: 20px; }
 
-/* line 25, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 25, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .location-side {
   background-color: #EAEBEC;
   padding: 10px 20px;
   margin-bottom: 20px;
   text-align: left;
   font-weight: lighter; }
-  /* line 31, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 31, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .location-side h3 {
     font-weight: lighter; }
 
-/* line 37, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 37, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .right-info-box {
   background-color: #EAEBEC;
   padding: 20px 20px;
@@ -35,51 +35,51 @@
   font-weight: lighter;
   border-bottom: 5px solid #c9c9c9;
   margin-bottom: 20px; }
-  /* line 42, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 42, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .right-info-box h3 {
     font-weight: lighter; }
-  /* line 47, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 47, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .right-info-box .btn {
     min-width: 137px;
     width: 100%;
     max-width: 200px; }
 
-/* line 55, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 55, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .text-side {
   padding: 10px 20px;
   text-align: left;
   font-weight: lighter; }
-  /* line 59, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 59, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .text-side h3, .text-side h2 {
     font-weight: lighter; }
-  /* line 62, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 62, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .text-side hr {
     border-top: 1px dashed #ccc; }
-  /* line 65, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 65, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .text-side button {
     float: right; }
-  /* line 68, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 68, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .text-side img {
     border: .5px solid #ccc;
     float: left;
     height: 100px;
     width: 150px;
     margin-right: 20px; }
-  /* line 75, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 75, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .text-side img.sponsor {
     height: auto; }
-  /* line 79, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 79, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .text-side .organiser-details p {
     margin-bottom: 0; }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* line 88, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 88, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 body, h1, h2, h3, h4, h4, h6, p, span, li, blockquote {
   font-family: 'Open Sans', sans-serif; }
 
-/* line 90, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 90, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 body {
   background-color: #EAEBEC;
   font-family: 'Open Sans', sans-serif;
@@ -87,34 +87,34 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden; }
 
-/* line 97, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 97, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 a:focus {
   outline: none; }
 
-/* line 101, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 101, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .light-bg {
   min-width: 100%;
   background-color: #FFFFFF; }
 
-/* line 106, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 106, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .navbar-brand {
   height: initial; }
 
-/* line 110, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 110, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .navbar-nav {
   margin-top: 15px; }
-  /* line 112, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 112, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .navbar-nav a {
     color: #FFFFFF;
     font-size: 1em; }
 
-/* line 118, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 118, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .navbar-default {
   border: none;
   background: #FFFFFF;
   padding-top: 0px; }
 
-/* line 124, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 124, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .btn {
   color: #FFFFFF;
   border-radius: 40px;
@@ -124,93 +124,93 @@ a:focus {
   font-size: 0.9em;
   font-weight: bold; }
 
-/* line 134, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 134, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .btn:hover, .btn:focus, .btn:active {
   color: #FFFFFF; }
 
-/* line 138, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 138, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .btn-default {
   background-color: #404141; }
 
-/* line 142, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 142, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .btn-default:hover, .btn-default:focus, .btn-default:active {
   background-color: #000000; }
 
-/* line 146, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 146, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .btn-primary {
   background-color: #08B3A6; }
 
-/* line 150, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 150, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: #089388; }
 
-/* line 154, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 154, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .btn-link {
   color: #08B3A6; }
 
-/* line 158, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 158, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .btn-link:hover, .btn-link:focus, .btn-link:active {
   color: #089388; }
 
-/* line 162, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 162, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 a {
   color: #08B3A6; }
 
-/* line 166, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 166, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 a:hover {
   color: #089388; }
 
-/* line 170, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 170, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 li .btn {
   margin-top: -15px; }
 
-/* line 176, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 176, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 p {
   font-size: 1.2em;
   line-height: 1.6; }
 
-/* line 182, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 182, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .taller-line-height {
   line-height: 1.7; }
 
-/* line 186, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 186, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 h1 {
   font-size: 4em; }
 
-/* line 190, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 190, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .font-light {
   font-weight: 100; }
 
-/* line 194, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 194, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .text-center {
   text-align: center; }
 
-/* line 198, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 198, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .carousel-indicators {
   bottom: -50px; }
 
-/* line 203, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 203, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .carousel-indicators li {
   background-color: #BDBDBD;
   width: 10px !important;
   height: 10px !important; }
 
-/* line 210, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 210, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .carousel-indicators li.active {
   background-color: #2375D2;
   margin: 1px; }
 
-/* line 215, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 215, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .carousel-control {
   width: 5%; }
 
-/* line 219, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 219, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .carousel-inner-left,
 .carousel-inner-right {
   width: 50%;
   display: inline-block; }
 
-/* line 226, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 226, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .carousel-inner-right {
   position: absolute;
   top: 50%;
@@ -220,12 +220,12 @@ h1 {
   transform: translateY(-50%);
   padding: 0 5%; }
 
-/* line 236, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 236, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .carousel-control.left,
 .carousel-control.right {
   background-image: none;
   outline: 0; }
-  /* line 241, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 241, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .carousel-control.left .glyphicon,
   .carousel-control.right .glyphicon {
     width: 40px;
@@ -238,34 +238,34 @@ h1 {
     margin-top: -20px;
     margin-left: -20px; }
 
-/* line 255, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 255, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .panel {
   background-color: transparent; }
 
 @media only screen and (max-width: 768px) {
-  /* line 260, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 260, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   h1 {
     font-size: 3em; }
 
-  /* line 264, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 264, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   h3 {
     font-size: 20px; }
 
-  /* line 267, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 267, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   h4 {
     font-size: 16px; }
 
-  /* line 270, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 270, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   p {
     font-size: 1em; }
 
-  /* line 274, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 274, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .carousel-inner-left,
   .carousel-inner-right {
     width: 100%;
     display: block; }
 
-  /* line 280, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 280, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .carousel-inner-right {
     position: relative;
     transform: none;
@@ -274,133 +274,133 @@ h1 {
     margin-top: 40px;
     text-align: center; }
 
-  /* line 290, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 290, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .container-past-challenges .carousel-control {
     width: 50%; }
 
-  /* line 298, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 298, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .carousel-control.left .glyphicon,
   .carousel-control.right .glyphicon {
     margin-top: 5px; }
-  /* line 302, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 302, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .carousel-control.left .glyphicon-chevron-left,
   .carousel-control.right .glyphicon-chevron-left {
     margin-left: 25%; }
-  /* line 306, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 306, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .carousel-control.left .glyphicon-chevron-right,
   .carousel-control.right .glyphicon-chevron-right {
     left: 20px; }
 
-  /* line 311, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 311, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .carousel-indicators {
     display: none; } }
-/* line 316, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+/* line 316, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .dropdown-default {
   min-width: 200px; }
-  /* line 319, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 319, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .dropdown-default .dropdown-menu {
     background-color: #404141;
     min-width: 200px; }
-  /* line 324, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 324, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .dropdown-default .dropdown-menu > li > a {
     color: #ffffff; }
-  /* line 327, /vagrant/website-2015/source/stylesheets/components/_base.scss */
+  /* line 327, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .dropdown-default .dropdown-menu > li > a:focus,
   .dropdown-default .dropdown-menu > li > a:hover {
     background-color: #000000; }
 
-/* line 5, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 5, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 #galleria {
   height: 620px; }
 
-/* line 7, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 7, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 #hhhead {
   font-variant: small-caps;
   font-weight: 800; }
 
-/* line 9, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 9, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .img-small {
   width: 250px; }
 
-/* line 10, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 10, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .callToAction {
   font-size: 1.0em; }
 
-/* line 14, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 14, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .hipsterteal {
   color: white !important;
   background-color: #17AA9D !important;
   border-color: #17A195 !important; }
 
-/* line 20, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 20, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 #sponsor-page {
   background-color: white; }
 
-/* line 24, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 24, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .register {
   margin-top: 5px; }
 
-/* line 28, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 28, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .sponsors {
   line-height: 150px; }
 
-/* line 32, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 32, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .sponsor {
   max-width: 250px;
   padding: 5px;
   vertical-align: middle; }
 
-/* line 38, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 38, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .title2013 {
   margin-left: 13px;
   padding-top: 20px;
   font-size: 2.0em;
   border-top: 1px solid #eee; }
 
-/* line 45, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 45, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .thumbtext {
   font-size: 0.8em; }
 
-/* line 49, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 49, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .offset {
   margin-top: 27px; }
 
-/* line 54, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 54, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .sideoffset {
   margin-left: 30px; }
 
-/* line 59, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 59, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .col-md-6 h3.sideoffset {
   margin-bottom: 20px;
   margin-left: 0;
   margin-top: 20px;
   font-weight: lighter; }
 
-/* line 67, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 67, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .col-footer {
   padding: 20px 0 30px 0; }
 
-/* line 71, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 71, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .less-padding-centred {
   text-align: center;
   padding-right: 0;
   word-wrap: break-word; }
 
-/* line 77, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 77, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .row-sponsors, .row-social {
   width: 100%; }
-  /* line 79, /vagrant/website-2015/source/stylesheets/main.css.scss */
+  /* line 79, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   .row-sponsors .col-md-4, .row-sponsors .col-xs-6, .row-social .col-md-4, .row-social .col-xs-6 {
     min-height: 120px; }
-  /* line 82, /vagrant/website-2015/source/stylesheets/main.css.scss */
+  /* line 82, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   .row-sponsors .min-height, .row-social .min-height {
     min-height: 380px; }
 
-/* line 86, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 86, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .row-social {
   padding: 0 10px; }
 
-/* line 90, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 90, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .row-social:after {
   content: "";
   position: absolute;
@@ -411,48 +411,48 @@ h1 {
   height: 80%;
   border-right: 1px solid #ccc; }
 
-/* line 101, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 101, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .social-logo {
   height: 20px;
   width: 30px; }
 
-/* line 105, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 105, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .boldbrand {
   font-weight: bold; }
 
-/* line 109, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 109, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .text-justify {
   text-align: justify; }
 
-/* line 113, /vagrant/website-2015/source/stylesheets/main.css.scss */
+/* line 113, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .nav-btn {
   display: inline-block; }
-  /* line 115, /vagrant/website-2015/source/stylesheets/main.css.scss */
+  /* line 115, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   .nav-btn li {
     display: inline-block;
     padding-top: 10px; }
-  /* line 119, /vagrant/website-2015/source/stylesheets/main.css.scss */
+  /* line 119, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   .nav-btn .dropdown-default {
     padding-right: 20px; }
 
 @media (min-width: 1200px) {
-  /* line 125, /vagrant/website-2015/source/stylesheets/main.css.scss */
+  /* line 125, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   body .light-bg > .container {
     max-width: none; } }
 @media only screen and (min-width: 922px) {
-  /* line 130, /vagrant/website-2015/source/stylesheets/main.css.scss */
+  /* line 130, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   body .light-bg > .container {
     max-width: none; } }
 @media only screen and (min-width: 768px) {
-  /* line 135, /vagrant/website-2015/source/stylesheets/main.css.scss */
+  /* line 135, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   body .light-bg > .container {
     max-width: none; } }
 @media only screen and (max-width: 1013px) {
-  /* line 141, /vagrant/website-2015/source/stylesheets/main.css.scss */
+  /* line 141, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   .row-social {
     border-right: 0; }
 
-  /* line 144, /vagrant/website-2015/source/stylesheets/main.css.scss */
+  /* line 144, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   .row-social:before {
     content: "";
     position: absolute;
@@ -462,33 +462,33 @@ h1 {
     width: 80%;
     border-bottom: 1px dotted #ccc; }
 
-  /* line 153, /vagrant/website-2015/source/stylesheets/main.css.scss */
+  /* line 153, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   body .light-bg > .container {
     max-width: none; }
-    /* line 155, /vagrant/website-2015/source/stylesheets/main.css.scss */
+    /* line 155, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
     body .light-bg > .container .nav-btn {
       display: block;
       margin-bottom: 5px;
       margin-top: 5px; }
-    /* line 160, /vagrant/website-2015/source/stylesheets/main.css.scss */
+    /* line 160, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
     body .light-bg > .container li > a {
       padding-top: 2px; } }
 @media only screen and (max-width: 767px) {
-  /* line 168, /vagrant/website-2015/source/stylesheets/main.css.scss */
+  /* line 168, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   body .light-bg > .container .btn {
     width: 100%; }
-  /* line 171, /vagrant/website-2015/source/stylesheets/main.css.scss */
+  /* line 171, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   body .light-bg > .container .btn-default {
     width: 100%; }
 
-  /* line 176, /vagrant/website-2015/source/stylesheets/main.css.scss */
+  /* line 176, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   .nav-btn li {
     display: block; }
 
-  /* line 179, /vagrant/website-2015/source/stylesheets/main.css.scss */
+  /* line 179, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   .nav-btn .dropdown-default {
     padding: 10px 15px; } }
-/* line 5, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+/* line 5, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .top-container {
   background: url("../images/background-banners/HH_HomeImage_1x.jpg") no-repeat;
   background-size: cover;
@@ -497,45 +497,45 @@ h1 {
   padding: 20px 20px;
   text-align: center;
   color: #FFFFFF; }
-  /* line 15, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+  /* line 15, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .top-container h1 {
     font-weight: 100; }
 
-/* line 24, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+/* line 24, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .row {
   padding-bottom: 20px 0 30px 0; }
 
-/* line 28, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+/* line 28, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .top-container-col {
   margin-top: 20px;
   padding: 2.2em;
   background-color: #FFFFFF;
   text-align: center;
   color: #000000; }
-  /* line 34, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+  /* line 34, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .top-container-col h2 {
     font-weight: 100; }
-  /* line 37, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+  /* line 37, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .top-container-col .btn {
     vertical-align: baseline;
     font-size: 14px;
     padding: 10px 20px; }
 
-/* line 44, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+/* line 44, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .top-container-text {
   padding: 2em; }
 
-/* line 48, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+/* line 48, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .top-container-dropdown {
   width: 200px;
   margin: 0 auto; }
 
-/* line 52, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+/* line 52, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .row-involved {
   margin-top: -160px;
   padding: 0 10%; }
 
-/* line 62, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+/* line 62, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .event-description {
   text-align: justify;
   width: 100%;
@@ -543,18 +543,18 @@ h1 {
   font-size: larger;
   font-weight: 300; }
 
-/* line 70, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+/* line 70, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .event-regions {
   text-align: center;
   color: white;
   position: relative; }
-  /* line 76, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+  /* line 76, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .event-regions .event-region {
     color: #fff;
     cursor: pointer;
     position: relative;
     display: block; }
-  /* line 83, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+  /* line 83, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .event-regions .event-region-shadow {
     position: absolute;
     background-color: #0A0A0A;
@@ -563,24 +563,24 @@ h1 {
     left: 0;
     right: 0;
     opacity: 0.7; }
-  /* line 93, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+  /* line 93, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .event-regions .event-region:hover {
     font-style: normal;
     text-decoration: none; }
-    /* line 97, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+    /* line 97, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
     .event-regions .event-region:hover .event-region-shadow {
       opacity: 0.9; }
-    /* line 101, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+    /* line 101, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
     .event-regions .event-region:hover .event-region-text {
       text-decoration: none; }
-  /* line 106, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+  /* line 106, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .event-regions .event-region-shadow:hover {
     opacity: 0.9; }
-  /* line 111, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+  /* line 111, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .event-regions .event-region-image {
     width: 100%;
     height: auto; }
-  /* line 116, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+  /* line 116, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .event-regions .event-region-text {
     position: absolute;
     top: 50%;
@@ -590,51 +590,51 @@ h1 {
     margin-top: -75px;
     color: #fff; }
 
-/* line 128, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+/* line 128, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .container-past-challenges {
   margin-top: 30px; }
-  /* line 131, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+  /* line 131, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .container-past-challenges .carousel-winner {
     margin-top: 30px;
     background-color: #ffffff; }
 
-/* line 141, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+/* line 141, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .container-social-sponsors {
   padding: 70px 10px 0 10px; }
 
-/* line 145, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+/* line 145, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .twitter-panel {
   padding: 0 5%;
   width: 100%;
   text-align: center; }
 
-/* line 151, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+/* line 151, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .footer-okfna {
   width: 30px; }
 
-/* line 155, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+/* line 155, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 footer {
   padding: 10px 10%;
   line-height: 30px; }
 
 @media only screen and (max-width: 768px) {
-  /* line 162, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+  /* line 162, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .top-container {
     padding: 20px 25px; }
 
-  /* line 165, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+  /* line 165, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .row-involved {
     margin-top: -30%; }
 
-  /* line 168, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+  /* line 168, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .event-description {
     width: 90%; }
 
-  /* line 171, /vagrant/website-2015/source/stylesheets/components/_home.scss */
+  /* line 171, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .event-regions .col-sm-3 {
     margin: 10px 0;
     padding: 10px; } }
-/* line 6, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 6, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .top-container-base {
   background-color: white;
   background: linear-gradient(rgba(56, 149, 179, 0.6), #1065a7), top left;
@@ -645,72 +645,72 @@ footer {
   padding-top: 20px;
   color: white; }
 
-/* line 21, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 21, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .top-container-challenges {
   background: linear-gradient(rgba(56, 149, 179, 0.6), rgba(16, 101, 167, 0.8)), url("../images/background-banners/challenges.jpg") no-repeat center;
   background-size: cover; }
 
-/* line 31, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 31, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .top-container-sponsors {
   background: linear-gradient(rgba(56, 149, 179, 0.6), rgba(16, 101, 167, 0.8)), url("../images/background-banners/sponsors.jpg") no-repeat center;
   background-size: cover; }
 
-/* line 41, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 41, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .top-container-organisers {
   background: linear-gradient(rgba(56, 149, 179, 0.6), rgba(16, 101, 167, 0.8)), url("../images/background-banners/organisers.jpg") no-repeat center;
   background-size: cover; }
 
-/* line 55, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 55, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .top-container-Sydney {
   background: linear-gradient(rgba(56, 149, 179, 0.7), rgba(16, 101, 167, 0.8)), url("../images/background-banners/sydney-lg.jpg") no-repeat left;
   background-size: cover; }
 
-/* line 65, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 65, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .top-container-Brisbane {
   background: linear-gradient(rgba(56, 149, 179, 0.7), #1065a7), url("../images/background-banners/brisbane-lg.jpg") no-repeat left;
   background-size: cover; }
 
-/* line 75, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 75, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .top-container-Melbourne {
   background: linear-gradient(rgba(56, 149, 179, 0.7), #1065a7), url("../images/background-banners/melbourne-lg.jpg") no-repeat left;
   background-size: cover; }
 
-/* line 85, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 85, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .top-container-Perth {
   background: linear-gradient(rgba(56, 149, 179, 0.7), #1065a7), url("../images/background-banners/perth-lg.jpg") no-repeat left;
   background-size: cover; }
 
-/* line 99, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 99, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 #map-canvas {
   width: 100%;
   height: 200px; }
 
-/* line 108, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 108, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .modal {
   margin: 0.5%; }
 
-/* line 112, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 112, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .modal-dialog {
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0; }
 
-/* line 119, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 119, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .modal-content {
   height: 100%;
   overflow: auto; }
 
-/* line 124, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 124, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .challenge-title {
   padding-left: 12px;
   padding-right: 20px;
   margin-bottom: -20px; }
-  /* line 129, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+  /* line 129, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
   .challenge-title .organiser-details {
     margin-top: 45px; }
 
-/* line 134, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 134, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .challenge-winner-label {
   background-color: #2575d4;
   padding: 5px 30px;
@@ -718,34 +718,34 @@ footer {
   float: right;
   margin-top: -21px; }
 
-/* line 142, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 142, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .challenge-details-panel {
   text-align: justify;
   padding: 5px 20px; }
 
-/* line 149, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 149, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .challenge-row .btn {
   float: left;
   margin: 10px 10px 10px 0; }
-/* line 153, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 153, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .challenge-row .grey-btn {
   background-color: #718795;
   color: #ffffff; }
-/* line 157, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 157, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .challenge-row .grey-btn:hover {
   background-color: #3e5564; }
-/* line 158, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 158, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .challenge-row .white-btn {
   background-color: #ffffff;
   color: #718795;
   border: 1px #718795 solid; }
-/* line 163, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 163, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .challenge-row .white-btn:hover {
   color: #3e5564;
   border: 1px #3e5564 solid;
   background-color: #e1e8ec; }
 
-/* line 170, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 170, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .search {
   height: 35px;
   min-width: 300px;
@@ -754,7 +754,7 @@ footer {
   padding: 10px;
   border-radius: 5px; }
 
-/* line 179, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 179, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .circular-centered {
   background-repeat: no-repeat;
   background-position: 50%;
@@ -766,35 +766,34 @@ footer {
   top: -40px;
   margin: 0px auto; }
 
-/* line 195, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 195, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .sponsor-block-cn {
   position: relative;
   margin-top: 30px; }
 
-/* line 200, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 200, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .sponsor-block-inner {
   vertical-align: middle; }
 
-/* line 204, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 204, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .sponsor-img-div {
   height: 100px;
   margin-bottom: 20px;
   text-align: center; }
 
-/* line 210, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 210, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .sponsor-logo-text-div {
   text-align: justify; }
 
-/* line 214, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 214, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .sponsor-logo-img-div {
   height: 80px;
   margin-bottom: 10px; }
 
-/* line 219, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
+/* line 219, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .sponsor-img {
   height: 100%; }
 
-<<<<<<< HEAD
 /* line 223, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .sponsor-grouping {
   padding-top: 40px;
@@ -813,13 +812,6 @@ footer {
   top: -15px; }
 
 /* line 244, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
-=======
-/* line 223, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
-.sponsor-decorator {
-  padding-left: 40px; }
-
-/* line 232, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
->>>>>>> 6dd50c68a5c041eb7af7d73e23ab6f0185f46f1e
 .bottom-container {
   background-color: #363435;
   text-align: center;
@@ -827,37 +819,21 @@ footer {
   position: relative;
   padding: 50px 0 60px 0;
   color: white; }
-<<<<<<< HEAD
   /* line 251, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
-=======
-  /* line 239, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
->>>>>>> 6dd50c68a5c041eb7af7d73e23ab6f0185f46f1e
   .bottom-container h3 {
     margin-bottom: 20px;
     margin-left: 0;
     margin-top: 20px; }
-<<<<<<< HEAD
   /* line 256, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
-=======
-  /* line 244, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
->>>>>>> 6dd50c68a5c041eb7af7d73e23ab6f0185f46f1e
   .bottom-container h4 {
     font-weight: lighter;
     margin-bottom: 20px; }
 
-<<<<<<< HEAD
 /* line 262, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .form-control {
   max-width: 300px; }
 
 /* line 270, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
-=======
-/* line 250, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
-.form-control {
-  max-width: 300px; }
-
-/* line 258, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
->>>>>>> 6dd50c68a5c041eb7af7d73e23ab6f0185f46f1e
 .quote-side {
   background-color: #EAEBEC;
   padding: 10px 20px 0 20px;
@@ -865,19 +841,11 @@ footer {
   text-align: center;
   font-weight: lighter;
   word-wrap: break-word; }
-<<<<<<< HEAD
   /* line 277, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
   .quote-side h3 {
     font-weight: lighter; }
 
 /* line 282, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
-=======
-  /* line 265, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
-  .quote-side h3 {
-    font-weight: lighter; }
-
-/* line 270, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
->>>>>>> 6dd50c68a5c041eb7af7d73e23ab6f0185f46f1e
 .quotes {
   font-family: Georgia, serif;
   font-size: 1.2em;
@@ -889,11 +857,7 @@ footer {
   position: relative;
   color: black; }
 
-<<<<<<< HEAD
 /* line 294, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
-=======
-/* line 282, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
->>>>>>> 6dd50c68a5c041eb7af7d73e23ab6f0185f46f1e
 .quotes:before {
   display: block;
   padding-left: 10px;
@@ -903,11 +867,7 @@ footer {
   left: -20px;
   top: -25px; }
 
-<<<<<<< HEAD
 /* line 304, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
-=======
-/* line 292, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
->>>>>>> 6dd50c68a5c041eb7af7d73e23ab6f0185f46f1e
 .quotes:after {
   display: block;
   content: "\201D";
@@ -916,11 +876,7 @@ footer {
   right: 0px;
   bottom: -70px; }
 
-<<<<<<< HEAD
 /* line 313, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
-=======
-/* line 301, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
->>>>>>> 6dd50c68a5c041eb7af7d73e23ab6f0185f46f1e
 #triangle-down {
   width: 10px;
   bottom: -30px;
@@ -930,11 +886,7 @@ footer {
   border-right: 20px solid transparent;
   border-top: 40px solid #EAEBEC; }
 
-<<<<<<< HEAD
 /* line 327, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
-=======
-/* line 315, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
->>>>>>> 6dd50c68a5c041eb7af7d73e23ab6f0185f46f1e
 .organiser-image {
   background-repeat: no-repeat;
   background-position: 50%;
@@ -947,35 +899,20 @@ footer {
   top: 15px;
   margin-right: 20px; }
 
-<<<<<<< HEAD
 /* line 340, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
-=======
-/* line 328, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
->>>>>>> 6dd50c68a5c041eb7af7d73e23ab6f0185f46f1e
 .organiser-details {
   float: left;
   margin-bottom: 20px; }
 
-<<<<<<< HEAD
 /* line 349, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .pagination {
   margin: 0 0 10px 0; }
   /* line 351, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
-=======
-/* line 337, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
-.pagination {
-  margin: 0 0 10px 0; }
-  /* line 339, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
->>>>>>> 6dd50c68a5c041eb7af7d73e23ab6f0185f46f1e
   .pagination li {
     display: inline-block;
     padding: 5px; }
 
-<<<<<<< HEAD
 /* line 357, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
-=======
-/* line 345, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
->>>>>>> 6dd50c68a5c041eb7af7d73e23ab6f0185f46f1e
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
   background-color: #08b3a6;
   border-color: #08b3a6;
@@ -983,11 +920,7 @@ footer {
   cursor: default;
   z-index: 1; }
 
-<<<<<<< HEAD
 /* line 364, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
-=======
-/* line 352, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
->>>>>>> 6dd50c68a5c041eb7af7d73e23ab6f0185f46f1e
 .pagination > li > a, .pagination > li > span {
   background-color: #fff;
   border: none;
@@ -999,24 +932,15 @@ footer {
   text-decoration: none;
   border-radius: 20px; }
 
-<<<<<<< HEAD
 /* line 376, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .pagination > li:last-child > a, .pagination > li:last-child > span, .pagination > li:last-child > a:hover, .pagination > li:last-child > span:hover, .pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:first-child > a:hover, .pagination > li:first-child > span:hover {
   border-radius: 20px; }
 
 /* line 380, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
-=======
-/* line 364, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
-.pagination > li:last-child > a, .pagination > li:last-child > span, .pagination > li:last-child > a:hover, .pagination > li:last-child > span:hover, .pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:first-child > a:hover, .pagination > li:first-child > span:hover {
-  border-radius: 20px; }
-
-/* line 368, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
->>>>>>> 6dd50c68a5c041eb7af7d73e23ab6f0185f46f1e
 .pagination-container {
   text-align: center; }
 
 @media only screen and (max-width: 768px) {
-<<<<<<< HEAD
   /* line 385, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
   .form-control {
     margin: 0 auto; }
@@ -1030,21 +954,6 @@ footer {
     padding: 20px 25px; }
 
   /* line 394, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
-=======
-  /* line 373, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
-  .form-control {
-    margin: 0 auto; }
-
-  /* line 376, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
-  .thin-container-normal {
-    width: 90%; }
-
-  /* line 379, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
-  .top-container-normal {
-    padding: 20px 25px; }
-
-  /* line 382, /vagrant/website-2015/source/stylesheets/components/_pages.scss */
->>>>>>> 6dd50c68a5c041eb7af7d73e23ab6f0185f46f1e
   .search {
     min-width: 100%;
     margin-top: 10px;
