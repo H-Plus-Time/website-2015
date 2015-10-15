@@ -40,9 +40,9 @@
         "href": "https://AWS.amazon.com",
         "img": "aws.png",
         "text": "Amazon Web Services provides a highly reliable, scalable, low-cost infrastructure platform in the cloud that powers hundreds of thousands of businesses in 190 countries around the world. You can be up and running and building your own applications in as little as 15 minutes.",
-        "location": ["brisbane"],
-        "scope": "community",
-        "type": "standard"
+        "location": ["sydney", "brisbane", "melbourne", "perth"],
+        "scope": "national",
+        "type": "gold"
     },
     "biomelbourne" : {
         "displayName": "BioMelbourne Network",
@@ -139,8 +139,8 @@
         "href": "http://www.itoc.com.au",
         "img": "itoc.png",
         "text": "We are cloud technology experts providing industry leading cloud services, advice and roadmaps for the proactive modernisation of information technology and business processes.",
-        "location": ["sydney", "brisbane", "melbourne", "perth"],
-        "scope": "national",
+        "location": ["brisbane"],
+        "scope": "community",
         "type": "gold"
     },
     "mrci" : {
@@ -210,7 +210,7 @@
         "displayName": "Telstra",
         "href": "https://www.telstra.com.au",
         "img": "telstra.png",
-        "text": "Telstra is Australia’s leading telecommunications and information services company, offering a full range of communications services and competing in all telecommunications markets.",
+        "text": "Telstra is Australia's leading telecommunications and information services company, offering a full range of communications services and competing in all telecommunications markets.",
         "location": ["brisbane"],
         "scope": "community",
         "type": "silver"
