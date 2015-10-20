@@ -52,11 +52,11 @@ load_sponsors = function(load_data, names, site_name, page_type) {
         $.get("./data/sponsors.json", function(data) {
             var sn = site_name.toLowerCase();
             $.each(names, function(index, s_name) {
-                console.log(s_name);
                 var sponsor_data = data[s_name];
                 $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
-                $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
-                $("#"+s_name+"-img").attr("src", "./images/sponsors/" + sponsor_data["img"]);
+                var $img = $("#"+s_name+"-img"); 
+                $img.attr("alt", sponsor_data["displayName"]);
+                $img.attr("src", "./images/sponsors/" + sponsor_data["img"]);
                 if("logos_only" == page_type) {
                     // remove decorators
                     $.each($(".sponsor-grouping"), function(index, dec) {
@@ -65,7 +65,7 @@ load_sponsors = function(load_data, names, site_name, page_type) {
                     // only allow gold, platinum or national sponsors on the main small logos section
                     if("gold" == sponsor_data["type"] || "platinum" == sponsor_data["type"]) {
                         $("#"+s_name+"-img-div").addClass("sponsor-logo-img-div");      // half width logos
-                        $("#"+s_name+"-block").addClass("col-xs-6"); 
+                        $("#"+s_name+"-block").addClass("col-xs-12"); 
                         type_counts[sponsor_data["scope"]+"-"+sponsor_data["type"]] ++;
                     } else {
                         $("#"+s_name+"-block").remove();
@@ -73,11 +73,12 @@ load_sponsors = function(load_data, names, site_name, page_type) {
                 } else {
                     if ("location" == page_type && -1 == sponsor_data["location"].indexOf(sn)) {
                         $("#"+s_name+"-block").remove();
-                    } else {                    
-                        $("#"+s_name+"-img-div").addClass("sponsor-img-div");
+                    } else {
+                        var $img_div = $("#"+s_name+"-img-div");         
+                        $img_div.addClass("sponsor-img-div");
                         $("#"+s_name+"-block").addClass("col-xs-12");
                         var $text_div = $("<div>", { "html": sponsor_data["text"], "class": "sponsor-logo-text-div" });
-                        $text_div.insertAfter("#"+s_name+"-img-div");
+                        $text_div.insertAfter($img_div);
                         type_counts[sponsor_data["scope"]+"-"+sponsor_data["type"]] ++;
                     }
                 }
