@@ -52,6 +52,7 @@ load_sponsors = function(load_data, names, site_name, page_type) {
         $.get("./data/sponsors.json", function(data) {
             var sn = site_name.toLowerCase();
             $.each(names, function(index, s_name) {
+                console.log(s_name);
                 var sponsor_data = data[s_name];
                 $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
                 $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
