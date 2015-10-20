@@ -62,6 +62,15 @@
         "scope": "community",
         "type": "silver"
     },
+    "chiasma" : {
+        "displayName": "Chiasma Health",
+        "href": "https://chiasma.com.au/",
+        "img": "chiasma.png",
+        "text": "Chiasma Health is an innovative medical and research software company. We create secure, web-based and customised software for the entire research pipeline - from data collection to manuscript production. Our tools and services are designed by experienced researchers and are compliant with Australian research data security and privacy guidelines.",
+        "location": ["melbourne"],
+        "scope": "community",
+        "type": "standard"
+    },
     "csl" : {
         "displayName": "CSL",
         "href": "http://www.csl.com.au/",
@@ -143,6 +152,15 @@
         "scope": "community",
         "type": "gold"
     },
+    "lenovo" : {
+        "displayName": "Lenovo",
+        "href": "https://www.lenovo.com.au",
+        "img": "lenovo.png",
+        "text": "Lenovo is a global technology company providing an innovative, smart connected and infrastructure device portfolio for both businesses and consumers, offering a range of high-quality hardware from wearables and smartphones to tablets, PCs, servers, software and cloud services. Lenovo is the #1 PC vendor in the world, selling around five devices every second.",
+        "location": ["sydney", "brisbane", "melbourne", "perth"],
+        "scope": "national",
+        "type": "silver"
+    },
     "mrci" : {
         "displayName": "Murdoch Childrens Research Institute",
         "href": "https://www.mcri.edu.au",
@@ -165,7 +183,7 @@
         "displayName": "QLD Health",
         "href": "https://www.health.qld.gov.au/",
         "img": "qldhealth.png",
-        "text": "",
+        "text": "Queensland Health is committed to providing healthcare that Queenslanders value. Our networked public health system delivers a range of safe, responsive and integrated services across the state—from hospital inpatient, outpatient and emergency services, to community and mental health services, aged care services, and public health and health promotion programs. By protecting and promoting the health and wellbeing of our communities now, we are supporting the development of a healthier Queensland for the future.",
         "location": ["brisbane"],
         "scope": "community",
         "type": "silver"
@@ -238,8 +256,17 @@
         "href": "http://platformtechnologies.org/",
         "img": "vptn.png",
         "text": "Established in 2009, the Victorian Platform Technologies Network (VPTN) plays a key role in connecting publicly-funded facilities in Victoria with industry and researchers. Through its online services - ARIN and PlatformConnect - VPTN is unique in offering a centralised, open and cross-institutional network of over 140 platform technologies across more than 30 institutions. The VPTN is an initiative supported by the Victorian Government, Biomedical Research Victoria and Monash University.",
-        "location": ["brisbane","perth","sydney","melbourne"],
-        "scope": "national",
+        "location": ["melbourne"],
+        "scope": "community",
+        "type": "gold"
+    },
+    "victoria" : {
+        "displayName": "Victorian Government",
+        "href": "http://www.vic.gov.au",
+        "img": "victoria.png",
+        "text": "The Victorian Government is responsible for public schools, health, policing, roads and traffic, public housing and business regulation. We develop and deliver policies, programs and services that support and enhance the wellbeing of all Victorians.",
+        "location": ["melbourne"],
+        "scope": "community",
         "type": "gold"
     },    
     "yorkbutter" : {
