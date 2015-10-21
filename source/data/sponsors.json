@@ -153,13 +153,23 @@
         "type": "gold"
     },
     "itoc" : {
-        "displayName": "Intel",
+        "displayName": "ITOC",
         "href": "http://www.itoc.com.au",
         "img": "itoc.png",
         "text": "We are cloud technology experts providing industry leading cloud services, advice and roadmaps for the proactive modernisation of information technology and business processes.",
         "location": ["brisbane"],
         "scope": "community",
         "type": "gold"
+    },
+    "landgate":
+    {
+        "displayName": "WALIS/Landgate",
+        "href": "http://www.walis.wa.gov.au",
+        "img": "landgate.png",
+        "text": "WALIS drives innovative partnerships and works with business, academia and the community to make it easier to find, use and improve location information for WA. Landgate is a statutory authority accountable to the Minister for Lands Western Australia.",
+        "location": ["perth"],
+        "scope": "community",
+        "type": "gold"        
     },
     "lenovo" : {
         "displayName": "Lenovo",
