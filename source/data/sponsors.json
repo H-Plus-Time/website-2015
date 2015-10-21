@@ -134,6 +134,15 @@
         "scope": "community",
         "type": "gold"
     },
+    "inkubator" : {
+        "displayName": "Inkubator",
+        "href": "http://inkubator.com.au",
+        "img": "inkubator.png",
+        "text": "Inkubator is a digital creative studio that innovates in the space where art, technology and social change converge to create digital solutions and experiences for the organisations and communities we work with. We partner with our clients on a journey of discovery and enlightenment and are committed to a with not for design philosophy, accessibility and universal design practices. Our team is excited and inspired by the potential for change digital solutions offer with a particular interest in the education, healthcare, science and research fields.",
+        "location": ["perth"],
+        "scope": "community",
+        "type": "gold"
+    },
     "intel" : {
         "displayName": "Intel",
         "href": "http://www.intel.com.au",
