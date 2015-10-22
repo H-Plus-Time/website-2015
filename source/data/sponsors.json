@@ -125,6 +125,15 @@
         "scope": "national",
         "type": "gold"
     },
+    "hcf" : {
+        "displayName": "",
+        "href": "",
+        "img": "hcf.png",
+        "text": "",
+        "location": ["sydney", "brisbane", "melbourne", "perth"],
+        "scope": "national",
+        "type": "gold"
+        },
     "hopgood" : {
         "displayName": "Hopgood Ganim",
         "href": "http://www.hopgoodganim.com.au",
@@ -221,8 +230,8 @@
         "href": "http://www.redhat.com",
         "img": "redhat.png",
         "text": " Red Hat is at the forefront of open source software development for enterprise IT, with a broad portfolio of products and services for commercial markets.",
-        "location": ["sydney"],
-        "scope": "community",
+        "location": ["brisbane","perth","sydney","melbourne"],
+        "scope": "national",
         "type": "silver"
     },
     "rivercitylabs" : {
