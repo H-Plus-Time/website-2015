@@ -40,9 +40,9 @@
         "href": "https://AWS.amazon.com",
         "img": "aws.png",
         "text": "Amazon Web Services provides a highly reliable, scalable, low-cost infrastructure platform in the cloud that powers hundreds of thousands of businesses in 190 countries around the world. You can be up and running and building your own applications in as little as 15 minutes.",
-        "location": ["sydney", "brisbane", "melbourne", "perth"],
-        "scope": "national",
-        "type": "gold"
+        "location": ["brisbane"],
+        "scope": "community",
+        "type": "standard"
     },
     "biomelbourne" : {
         "displayName": "BioMelbourne Network",
@@ -61,15 +61,6 @@
         "location": ["sydney"],
         "scope": "community",
         "type": "silver"
-    },
-    "chiasma" : {
-        "displayName": "Chiasma Health",
-        "href": "https://chiasma.com.au/",
-        "img": "chiasma.png",
-        "text": "Chiasma Health is an innovative medical and research software company. We create secure, web-based and customised software for the entire research pipeline - from data collection to manuscript production. Our tools and services are designed by experienced researchers and are compliant with Australian research data security and privacy guidelines.",
-        "location": ["melbourne"],
-        "scope": "community",
-        "type": "standard"
     },
     "csl" : {
         "displayName": "CSL",
@@ -125,30 +116,12 @@
         "scope": "national",
         "type": "gold"
     },
-    "hcf" : {
-        "displayName": "",
-        "href": "",
-        "img": "hcf.png",
-        "text": "",
-        "location": ["sydney", "brisbane", "melbourne", "perth"],
-        "scope": "national",
-        "type": "gold"
-        },
     "hopgood" : {
         "displayName": "Hopgood Ganim",
         "href": "http://www.hopgoodganim.com.au",
         "img": "hopgood.png",
         "text": "HopgoodGanim Lawyers is a legal firm of trusted experts. Our lawyers stand at the intersection of technology and the law and are committed to promoting and protecting innovation. We understand your industry and ensure your interests are protected from every angle. Founded over 40 years ago, today we remain fiercely independent and proud of our sustained growth and ongoing success. We deliver exceptional commercially-focused legal advice to clients throughout Australia and internationally. We draw on the resources of over 280 staff across offices in Brisbane, Perth and Shanghai.",
         "location": ["brisbane", "perth"],
-        "scope": "community",
-        "type": "gold"
-    },
-    "inkubator" : {
-        "displayName": "Inkubator",
-        "href": "http://inkubator.com.au",
-        "img": "inkubator.png",
-        "text": "Inkubator is a digital creative studio that innovates in the space where art, technology and social change converge to create digital solutions and experiences for the organisations and communities we work with. We partner with our clients on a journey of discovery and enlightenment and are committed to a with not for design philosophy, accessibility and universal design practices. Our team is excited and inspired by the potential for change digital solutions offer with a particular interest in the education, healthcare, science and research fields.",
-        "location": ["perth"],
         "scope": "community",
         "type": "gold"
     },
@@ -162,32 +135,13 @@
         "type": "gold"
     },
     "itoc" : {
-        "displayName": "ITOC",
+        "displayName": "Intel",
         "href": "http://www.itoc.com.au",
         "img": "itoc.png",
         "text": "We are cloud technology experts providing industry leading cloud services, advice and roadmaps for the proactive modernisation of information technology and business processes.",
-        "location": ["brisbane"],
-        "scope": "community",
-        "type": "gold"
-    },
-    "landgate":
-    {
-        "displayName": "WALIS/Landgate",
-        "href": "http://www.walis.wa.gov.au",
-        "img": "landgate.png",
-        "text": "WALIS drives innovative partnerships and works with business, academia and the community to make it easier to find, use and improve location information for WA. Landgate is a statutory authority accountable to the Minister for Lands Western Australia.",
-        "location": ["perth"],
-        "scope": "community",
-        "type": "gold"        
-    },
-    "lenovo" : {
-        "displayName": "Lenovo",
-        "href": "https://www.lenovo.com.au",
-        "img": "lenovo.png",
-        "text": "Lenovo is a global technology company providing an innovative, smart connected and infrastructure device portfolio for both businesses and consumers, offering a range of high-quality hardware from wearables and smartphones to tablets, PCs, servers, software and cloud services. Lenovo is the #1 PC vendor in the world, selling around five devices every second.",
         "location": ["sydney", "brisbane", "melbourne", "perth"],
         "scope": "national",
-        "type": "silver"
+        "type": "gold"
     },
     "mrci" : {
         "displayName": "Murdoch Childrens Research Institute",
@@ -211,7 +165,7 @@
         "displayName": "QLD Health",
         "href": "https://www.health.qld.gov.au/",
         "img": "qldhealth.png",
-        "text": "Queensland Health is committed to providing healthcare that Queenslanders value. Our networked public health system delivers a range of safe, responsive and integrated services across the state—from hospital inpatient, outpatient and emergency services, to community and mental health services, aged care services, and public health and health promotion programs. By protecting and promoting the health and wellbeing of our communities now, we are supporting the development of a healthier Queensland for the future.",
+        "text": "",
         "location": ["brisbane"],
         "scope": "community",
         "type": "silver"
@@ -230,8 +184,8 @@
         "href": "http://www.redhat.com",
         "img": "redhat.png",
         "text": " Red Hat is at the forefront of open source software development for enterprise IT, with a broad portfolio of products and services for commercial markets.",
-        "location": ["brisbane","perth","sydney","melbourne"],
-        "scope": "national",
+        "location": ["sydney"],
+        "scope": "community",
         "type": "silver"
     },
     "rivercitylabs" : {
@@ -256,7 +210,7 @@
         "displayName": "Telstra",
         "href": "https://www.telstra.com.au",
         "img": "telstra.png",
-        "text": "Telstra is Australia's leading telecommunications and information services company, offering a full range of communications services and competing in all telecommunications markets.",
+        "text": "Telstra is Australia’s leading telecommunications and information services company, offering a full range of communications services and competing in all telecommunications markets.",
         "location": ["brisbane"],
         "scope": "community",
         "type": "silver"
@@ -284,17 +238,8 @@
         "href": "http://platformtechnologies.org/",
         "img": "vptn.png",
         "text": "Established in 2009, the Victorian Platform Technologies Network (VPTN) plays a key role in connecting publicly-funded facilities in Victoria with industry and researchers. Through its online services - ARIN and PlatformConnect - VPTN is unique in offering a centralised, open and cross-institutional network of over 140 platform technologies across more than 30 institutions. The VPTN is an initiative supported by the Victorian Government, Biomedical Research Victoria and Monash University.",
-        "location": ["melbourne"],
-        "scope": "community",
-        "type": "gold"
-    },
-    "victoria" : {
-        "displayName": "Victorian Government",
-        "href": "http://www.vic.gov.au",
-        "img": "victoria.png",
-        "text": "The Victorian Government is responsible for public schools, health, policing, roads and traffic, public housing and business regulation. We develop and deliver policies, programs and services that support and enhance the wellbeing of all Victorians.",
-        "location": ["melbourne"],
-        "scope": "community",
+        "location": ["brisbane","perth","sydney","melbourne"],
+        "scope": "national",
         "type": "gold"
     },    
     "yorkbutter" : {

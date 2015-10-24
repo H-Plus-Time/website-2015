@@ -7,8 +7,7 @@
 		"page": "brisbane.html",
 		"faqs" : {
 			"site" : [ 
-				["Do you have a programme of events?", "Yes, yo can download the latest version <a href='./data/HH_BNE_programme_2015.pdf'>here.</a>"],
-				["Are you supplying childcare?", "Sorry, we were trying to get something organised but we ran out of time. That being said, your children are welcome to attend, just let us know."]
+				["Are you supplying childcare?", "We're still working on this. Hopefully we'll have more information soon"]
 			],
 			"participant" : [],
 			"owner" : [] 

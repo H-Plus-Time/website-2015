@@ -13,6 +13,7 @@ equalheight = function(container) {
 
         if (currentRowStart != topPostion) {
             for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+                console.log(currentTallest, topPostion, rowDivs[currentDiv])
                 rowDivs[currentDiv].height(currentTallest);
             }
             rowDivs.length = 0; // empty the array
@@ -40,53 +41,34 @@ centrewithin = function(container) {
 };
 
 load_sponsors = function(load_data, names, site_name, page_type) {
-    // keep count of sponsor types so we know which decorators to remove
-    var type_counts = {
-                        "national-gold" : 0,
-                        "national-silver" : 0,
-                        "community-gold" : 0,
-                        "community-silver" : 0,
-                        "community-standard" : 0
-                      }
     if  (load_data) {
         $.get("./data/sponsors.json", function(data) {
             var sn = site_name.toLowerCase();
             $.each(names, function(index, s_name) {
                 var sponsor_data = data[s_name];
                 $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
-                var $img = $("#"+s_name+"-img"); 
-                $img.attr("alt", sponsor_data["displayName"]);
-                $img.attr("src", "./images/sponsors/" + sponsor_data["img"]);
+                $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
+                $("#"+s_name+"-img").attr("src", "./images/sponsors/" + sponsor_data["img"]);
+                $("#"+s_name+"-decorator").attr("src", "./images/sponsors/" + sponsor_data["scope"] + "-" + sponsor_data["type"] + ".png");
                 if("logos_only" == page_type) {
                     // remove decorators
-                    $.each($(".sponsor-grouping"), function(index, dec) {
-                        dec.remove();
-                    });
+                    $("#"+s_name+"-decorator").remove();
                     // only allow gold, platinum or national sponsors on the main small logos section
                     if("gold" == sponsor_data["type"] || "platinum" == sponsor_data["type"]) {
                         $("#"+s_name+"-img-div").addClass("sponsor-logo-img-div");      // half width logos
-                        $("#"+s_name+"-block").addClass("col-xs-12"); 
-                        type_counts[sponsor_data["scope"]+"-"+sponsor_data["type"]] ++;
+                        $("#"+s_name+"-block").addClass("col-xs-6");                        
                     } else {
                         $("#"+s_name+"-block").remove();
                     }
                 } else {
                     if ("location" == page_type && -1 == sponsor_data["location"].indexOf(sn)) {
                         $("#"+s_name+"-block").remove();
-                    } else {
-                        var $img_div = $("#"+s_name+"-img-div");         
-                        $img_div.addClass("sponsor-img-div");
+                    } else {                    
+                        $("#"+s_name+"-img-div").addClass("sponsor-img-div");
                         $("#"+s_name+"-block").addClass("col-xs-12");
                         var $text_div = $("<div>", { "html": sponsor_data["text"], "class": "sponsor-logo-text-div" });
-                        $text_div.insertAfter($img_div);
-                        type_counts[sponsor_data["scope"]+"-"+sponsor_data["type"]] ++;
+                        $text_div.insertAfter("#"+s_name+"-img-div");
                     }
-                }
-            });
-            // remove any un-needed decorators 
-            $.each(type_counts, function(cls, count) {
-                if(0 == count) {
-                    $("#decorator-"+cls).remove();
                 }
             });
             equalheight('.sponsor-block-cn');

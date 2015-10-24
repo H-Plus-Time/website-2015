@@ -26,7 +26,7 @@
 		},
 		{
 			"name" : "Mike Imelfort",
-			"role" : "Lover of complexity",
+			"role" : "Consultant",
 			"city" : "Brisbane",
 			"email" : "mike@mikeimelfort.com",
 			"photo" : "images/organisers/mike.imelfort.png",
@@ -50,11 +50,11 @@
 		},
 		{
 			"name" : "Mitchell Stanton-Cook",
-			"role" : "Open Data Evangelist",
+			"role" : "Operational Bioinformatician",
 			"city" : "Brisbane",
 			"email" : "m.stantoncook@gmail.com",
 			"photo" : "images/organisers/mitchell.stanton.cook.png",
-			"bio" : "Mitchell Stanton-Cook sits at the interface between data, technology, science and innovation. He started the HealthHack journey as an operational bioinformatician. He is now a developer focused on open data at XVT Solutions. At XVT he applies technology to help organisations with ambitious projects achieve amazing outcomes."
+			"bio" : "Mitchell Stanton-Cook is an Operational Bioinformatician at the University of Queensland. At work he develops solutions for the efficient storage, processing and analysis of microbial genomics data sets. He spends his spare time participating at tech meetups and hackathons."
 		},
 		{
 			"name" : "Michael Walker",
