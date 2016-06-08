@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+    <!-- Layout for the langing page -->
+    <head>
+        <title>Health Hack 2016</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel='icon' type='image/png' href='../static/images/favicon.png'/>
+
+        <link href="header.html" rel="import"/>
+        <link href="healthhackFooter.html" rel="import"/>
+        <link href="siteNavBar.html" rel="import"/>
+        <link href="mainTopSection.html" rel="import"/>
+        <link href="submitProblemCallout.html" rel="import"/>
+        <link href="getInvolvedCallout.html" rel="import"/>
+        <link href="mainSocialSponsorsSection.html" rel="import"/>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+        <div class="light-bg">
+            <div class="container light-bg">
+            <div class="header"></div>
+                <site-nav-bar></site-nav-bar>
+            </div>
+        </div>
+        <main-top-section></main-top-section>
+        <div class="container">
+<!--<div class="alert alert-warning">
+<strong>Teams:</strong> Be sure to start setting up your team pages on the <a href="https://github.com/healthhack-melb/wiki/wiki">HealthHack Wiki</a>. Grab a helper if you need some help.
+</div>-->
+    <div class="row event-description">
+        <p>
+            HealthHack is a product-building event that runs from a Friday evening through to Sunday. Teams work on problems that have been submitted by Problem Owners - typically medical researchers, medical organisations, hospitals or government— but they could come from anyone who has a health-related problem they want to solve. The HealthHack kicks off on Friday 23rd October at 6pm and continues all day and night on Saturday 24th concluding in the evening on Sunday 25th. Festivities wrap up on the Sunday at 4pm with judging and prizes.
+        </p>
+    </div>
+    <div id="event-regions" class="row event-regions"></div>
+</div>
+
+<div class="container-fluid container-past-challenges">
+    <h2 class="text-center">Previous Challenge Highlights</h2>
+    <div id="winners-carousel" class="carousel slide carousel-winner"  data-ride="carousel" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#winners-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#winners-carousel" data-slide-to="1"></li>
+            <li data-target="#winners-carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="../static/images/winners/vizmygrant.jpg" alt="VizMyGrant" class="carousel-inner-left" data-holder-rendered="true">
+                <div class="carousel-inner-right">
+                    <h2>Team VizMyGrant</h2>
+                    <p>VizMyGrant enables advocates to rapidly explore the characteristics of grants (such as institutions, gender, state) and create compelling visual aids that can be used to highlight areas for policy improvement.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../static/images/winners/panogram.jpg" alt="Panogram Pedigree Drawing Tool" class="carousel-inner-left" data-holder-rendered="true">
+                <div class="carousel-inner-right">
+                    <h2>Panogram Pedigree Drawing Tool</h2>
+                    <p>An online pedigree drawing tool that can be linked to patient data. The ability to compile accurate clinician data records will lead to better outcomes for patients.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../static/images/winners/autoimmuno.jpg" alt="Team Autoimmuno" class="carousel-inner-left" data-holder-rendered="true">
+                <div class="carousel-inner-right">
+                    <h2>Team Autoimmuno</h2>
+                    <p>An automated way of comparing sequencing results to a template, identifying the point mutations and amino acid substitutions, and presenting the analyses in an appropriate table format.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#winners-carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#winners-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<script>
+    // build the mini location squares
+    $.get("../static/data/locations.json", function(data) {
+        $.each (Object.keys(data), function(index, city) {
+            var $loc_col_div = $("<div>", { class: "col-sm-3" });
+            var $loc_href = $("<a>", { href: data[city]["page"], class: "event-region" });
+            var $loc_city_image = $("<img>", { src: "../static/" + data[city]["image-sm"], class: "event-region-image" });
+            var $loc_shad_span = $("<span>", { class: "event-region-shadow" });
+            var $loc_text_span = $("<span>", { class: "event-region-text" });
+            $loc_text_span.append($("<h2>", { html: city, class: "font-light" }));
+            $loc_text_span.append($("<p>", { html: data[city]["where_readable"][0] }));
+            $loc_text_span.append($("<div>", { html: "Learn More", class: "btn-link" }));
+            $loc_href.append($loc_city_image);
+            $loc_href.append($loc_shad_span);
+            $loc_href.append($loc_text_span);
+            $loc_col_div.append($loc_href);
+            $("#event-regions").append($loc_col_div);
+        });
+    });
+
+    $(window).load(function() {
+        equalheight('.row .top-container-col');
+    });
+
+    $(window).resize(function(){
+        equalheight('.row .top-container-col');
+    });
+
+</script>
+        <main-social-sponsors-section></main-social-sponsors-section>
+        <healthhack-footer></healthhack-footer>
+    </body>
+</html>

@@ -1,0 +1,426 @@
+//-----------------------------------------------------------------------------
+// Top banner settings
+//
+
+// base settings for all containers
+.top-container-base {
+    background-color: white;
+    background:
+        linear-gradient(
+            rgba(56, 149, 179, 0.6),
+            rgba(16, 101, 167, 1)
+        ), top left;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: -20px;
+    padding-top: 20px;
+    color: white;
+}
+
+.top-container-challenges {
+    background:
+        linear-gradient(
+            rgba(56, 149, 179, 0.6),
+            rgba(16, 101, 167, .8)
+        ),
+        url("../images/background-banners/challenges.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.top-container-sponsors {
+    background:
+        linear-gradient(
+            rgba(56, 149, 179, 0.6),
+            rgba(16, 101, 167, .8)
+        ),
+        url("../images/background-banners/sponsors.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.top-container-organisers {
+    background:
+        linear-gradient(
+            rgba(56, 149, 179, 0.6),
+            rgba(16, 101, 167, .8)
+        ),
+        url("../images/background-banners/organisers.jpg") no-repeat center;
+    background-size: cover;
+}
+
+//-----------------------------------------------------------------------------
+// Event locations pages banner settings
+//
+
+.top-container-Sydney {
+    background:
+        linear-gradient(
+            rgba(56, 149, 179, 0.7),
+            rgba(16, 101, 167, 0.8)
+        ),
+        url("../images/background-banners/sydney-lg.jpg") no-repeat left;
+    background-size: cover;
+}
+
+.top-container-Brisbane {
+    background:
+        linear-gradient(
+            rgba(56, 149, 179, 0.7),
+            rgba(16, 101, 167, 1)
+        ),
+        url("../images/background-banners/brisbane-lg.jpg") no-repeat left;
+    background-size: cover;
+}
+
+.top-container-Melbourne {
+    background:
+        linear-gradient(
+            rgba(56, 149, 179, 0.7),
+            rgba(16, 101, 167, 1)
+        ),
+        url("../images/background-banners/melbourne-lg.jpg") no-repeat left;
+    background-size: cover;
+}
+
+.top-container-Perth {
+    background:
+        linear-gradient(
+            rgba(56, 149, 179, 0.7),
+            rgba(16, 101, 167, 1)
+        ),
+        url("../images/background-banners/perth-lg.jpg") no-repeat left;
+    background-size: cover;
+}
+
+//-----------------------------------------------------------------------------
+// Locations
+//
+
+#map-canvas {
+    width: 100%;
+    height: 200px;
+}
+
+//-----------------------------------------------------------------------------
+// Challenges
+//
+
+.modal {
+    margin: 0.5%;
+}
+
+.modal-dialog {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin:0;
+}
+
+.modal-content {
+    height: 100%;
+    overflow:auto;
+}
+
+.challenge-title {
+    padding-left: 12px;
+    padding-right: 20px;
+    margin-bottom: -20px;
+
+    .organiser-details {
+        margin-top: 45px;
+    }
+}
+
+.challenge-winner-label {
+    background-color:#2575d4;
+    padding:5px 30px;
+    color:white;
+    float:right;
+    margin-top:-21px;
+}
+
+.challenge-details-panel {
+    text-align: justify;
+    padding:5px 20px;
+
+}
+
+.challenge-row {
+    .btn {
+        float: left;
+        margin: 10px 10px 10px 0;
+    }
+    .grey-btn {
+        background-color: #718795;
+        color: #ffffff;
+    }
+    .grey-btn:hover {background-color: #3e5564}
+    .white-btn {
+        background-color: #ffffff;
+        color: #718795;
+        border: 1px #718795 solid;
+    }
+    .white-btn:hover {
+        color: #3e5564;
+        border: 1px #3e5564 solid;
+        background-color: #e1e8ec;
+    }
+}
+
+.search {
+  height: 35px;
+  min-width: 300px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.circular-centered {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 350%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position:relative;
+    top: -40px;
+    margin: 0px auto;
+}
+
+//-----------------------------------------------------------------------------
+// Sponsors
+//
+
+.sponsor-block-cn {
+    position: relative;
+    margin-top: 30px;
+}
+
+.sponsor-block-inner {
+    vertical-align: middle;
+}
+
+.sponsor-img-div {
+    height: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sponsor-logo-text-div {
+    text-align: justify;    
+}
+
+.sponsor-logo-img-div {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.sponsor-img {
+    width: auto;
+    height: 85%;
+}
+
+.sponsor-grouping {
+    padding-top: 40px;
+    padding-bottom: 0px;
+}
+
+.sponsor-hr {
+    height: 2px;
+    background-color: #EAEBEC;
+    text-align: left;
+}
+
+.sponsor-grouping-img {
+    height: 30px;
+    position: relative;
+    top: -15px;
+}
+
+//-----------------------------------------------------------------------------
+// Sponsors callout
+//
+
+.bottom-container {
+    background-color: #363435;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    padding: 50px 0 60px 0;
+    color: white;
+    h3 {
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    h4 {
+        font-weight: lighter;
+        margin-bottom: 20px;
+    }
+}
+
+.form-control {
+    max-width: 300px;
+}
+
+//-----------------------------------------------------------------------------
+// Side quotes
+//
+
+.quote-side {
+    background-color: #EAEBEC;
+    padding: 10px 20px 0 20px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: lighter;
+    word-wrap: break-word;
+    h3 {
+        font-weight: lighter;
+    }
+}
+
+.quotes{
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 2em;
+    margin-top: -1em;
+    padding: 0.35em 30px;
+    line-height: 1.45;
+    position: relative;
+    color: black;
+}
+
+.quotes:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -25px;
+}
+
+.quotes:after {
+    display: block;
+    content: "\201D";
+    font-size: 80px;
+    position: absolute;
+    right: 0px;
+    bottom: -70px;
+}
+
+#triangle-down {
+    width: 10px;
+    bottom:-30px;
+    margin: 0px auto;
+    position: relative;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid #EAEBEC;
+}
+
+//-----------------------------------------------------------------------------
+// Organisers
+//
+
+.organiser-image {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    border-radius: 50%;
+    float:left;
+    width: 100px;
+    height: 100px;
+    position:relative;
+    top: 15px;
+    margin-right: 20px;
+}
+
+.organiser-details {
+    float:left;
+    margin-bottom: 20px;
+}
+
+//-----------------------------------------------------------------------------
+// Pagination
+//
+
+.pagination {
+    margin: 0 0 10px 0;
+    li {
+        display:inline-block;
+        padding:5px;
+    }
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #08b3a6;
+    border-color: #08b3a6;
+    color: #fff;
+    cursor: default;
+    z-index: 1;
+}
+.pagination > li > a, .pagination > li > span {
+    background-color: #fff;
+    border: none;
+    float: none;
+    line-height: 1.42857;
+    margin: 0 auto;
+    padding: 6px 12px;
+    position: relative;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.pagination > li:last-child > a, .pagination > li:last-child > span, .pagination > li:last-child > a:hover, .pagination > li:last-child > span:hover,.pagination > li:first-child > a, .pagination > li:first-child > span,  .pagination > li:first-child > a:hover,  .pagination > li:first-child > span:hover {
+    border-radius: 20px;
+}
+
+.pagination-container {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .form-control {
+        margin:0 auto;
+    }
+    .thin-container-normal {
+        width:90%;
+    }
+    .top-container-normal {
+        padding: 20px 25px;
+    }
+    .search {
+      min-width: 100%;
+      margin-top: 10px;
+      margin-left: 0;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .sponsor-img {
+        width: auto;
+        height: 90%;
+    }    
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .sponsor-img {
+        width: 100%;
+        height: auto;
+    }    
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .sponsor-img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+//-----------------------------------------------------------------------------

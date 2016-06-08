@@ -1,0 +1,21 @@
+{
+  "name": "website-2016",
+  "homepage": "https://github.com/H-Plus-Time/website-2016",
+  "authors": [
+    "H-Plus-Time <hydrogenplustime@gmail.com>"
+  ],
+  "description": "",
+  "main": "templates/index.html",
+  "license": "GPLv3",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer#^1.5.0"
+  }
+}

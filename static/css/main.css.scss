@@ -1,0 +1,186 @@
+
+@import "varibles";
+@import 'components/base';
+
+#galleria{height:620px;}
+
+#hhhead{font-variant:small-caps;font-weight:800;}
+
+.img-small { width: 250px; }
+.callToAction {
+	font-size: 1.0em;
+}
+
+.hipsterteal {
+	color:white !important;
+	background-color : #17AA9D !important;
+	border-color:#17A195 !important;
+}
+
+#sponsor-page {
+	background-color: white;
+}
+
+.register {
+margin-top: 5px;
+}
+
+.sponsors {
+  line-height: 150px;
+}
+
+.sponsor {
+  max-width: 250px;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.title2013 {
+	margin-left: 13px;
+	padding-top: 20px;
+	font-size: 2.0em;
+	border-top: 1px solid #eee;
+}
+
+.thumbtext {
+	font-size: 0.8em;
+}
+
+.offset {
+	margin-top: 27px;
+}
+
+
+.sideoffset {
+	margin-left: 30px;
+}
+
+.col-md-6 {
+	h3.sideoffset {
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-top: 20px;
+		font-weight: lighter;
+	}
+}
+
+.col-footer {
+	padding: 20px 0 30px 0;
+}
+
+.less-padding-centred {
+	text-align: center;
+	padding-right: 0;
+	word-wrap: break-word;
+}
+
+.row-sponsors, .row-social {
+	width:100%;
+	.col-md-4, .col-xs-6 {
+		min-height: 120px;
+	}
+	.min-height {
+		min-height: 380px;
+	}
+}
+.row-social {
+	padding: 0 10px;
+}
+
+.row-social:after {
+	content: "";
+	position: absolute;
+	top: 10%;
+	right: 0;
+	bottom: 0;
+	width: 1px;
+	height: 80%;
+	border-right: 1px solid #ccc;
+}
+
+.social-logo {
+	height:20px;
+	width:30px;
+}
+.boldbrand {
+    font-weight: bold;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.nav-btn {
+	display: inline-block;
+	li {
+		display: inline-block;
+		padding-top: 10px;
+	}
+	.dropdown-default {
+		padding-right: 20px;
+	}
+}
+
+@media (min-width: 1200px) {
+	body .light-bg > .container {
+    	max-width: none;
+	}
+}
+@media only screen and (min-width: 922px) {
+	body .light-bg > .container {
+			max-width: none;
+	}
+}
+@media only screen and (min-width: 768px) {
+	body .light-bg > .container {
+			max-width: none;
+	}
+}
+
+@media only screen and (max-width: 1013px) {
+	.row-social {
+		border-right: 0;
+	}
+	.row-social:before {
+		content: "";
+		position: absolute;
+		left: 10%;
+		bottom: 0;
+		height: 1px;
+		width: 80%;
+		border-bottom: 1px dotted #ccc;
+	}
+	body .light-bg > .container {
+			max-width: none;
+			.nav-btn {
+				display:block;
+				margin-bottom: 5px;
+				margin-top: 5px;
+			}
+			li > a {
+				padding-top: 2px;
+			}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	body .light-bg > .container {
+			.btn {
+				width: 100%;
+			}
+			.btn-default {
+				width: 100%;
+			}
+		}
+
+	.nav-btn li {
+			display: block;
+	}
+	.nav-btn .dropdown-default {
+			padding: 10px 15px;
+	}
+}
+
+
+@import 'components/home';
+@import 'components/pages';

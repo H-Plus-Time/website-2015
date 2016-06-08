@@ -1,0 +1,53 @@
+{
+	"Brisbane" : {
+		"where_readable" : ["River City Labs", "2/282 Wickham St", "Fortitude Valley 4006"],
+		"where_coords" : [-27.4565241, 153.0344888],
+		"contact" : ["Mitchell Stanton-Cook", "Mike Imelfort"],
+		"image-sm" : "images/locations/brisbane.png",
+		"page": "brisbane.html",
+		"faqs" : {
+			"site" : [ 
+				["Do you have a programme of events?", "Yes, yo can download the latest version <a href='./data/HH_BNE_programme_2015.pdf'>here.</a>"],
+				["Are you supplying childcare?", "Sorry, we were trying to get something organised but we ran out of time. That being said, your children are welcome to attend, just let us know."]
+			],
+			"participant" : [],
+			"owner" : [] 
+			}
+		},
+	"Sydney" : {
+		"where_readable" : ["The Kinghorn Cancer Centre","370 Victoria St, Darlinghurst NSW 2010", "Sydney NSW 2010"],
+		"where_coords" : [-33.879144, 151.221782],
+		"contact" : ["Liviu Constantinescu", "Peter Budd"],
+		"image-sm" : "images/locations/sydney.png",
+		"page": "sydney.html",
+		"faqs" : {
+			"site" : [],
+			"participant" : [],
+			"owner" : [] 
+			}
+		},
+	"Perth" : {
+		"where_readable" : ["Curtin University", "Applied Chemistry, Building 500, Kent St", "Bentley WA 6014"],
+		"where_coords" : [-32.0061951,115.8944182],
+		"contact" : ["David Colls", "Diana Adorno"],
+		"image-sm" : "images/locations/perth.png",
+		"page": "perth.html",
+		"faqs" : {
+			"site" : [],
+			"participant" : [],
+			"owner" : [] 
+			}
+		},
+	"Melbourne" : {
+		"where_readable" : ["ThoughtWorks Melbourne","23/303 Collins St","Melbourne VIC 3000"],
+		"where_coords" : [-37.816685, 144.963967],
+		"contact" : ["Fiono Tweedie"],
+		"image-sm" : "images/locations/melbourne.png",
+		"page": "melbourne.html",
+		"faqs" : {
+			"site" : [],
+			"participant" : [],
+			"owner" : [] 
+			}
+	}
+}

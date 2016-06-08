@@ -1,0 +1,45 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="getInvolvedButton.html"/>
+
+<dom-module id="site-nav-bar">
+<template>
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="http://healthhack.com.au" class="navbar-brand boldbrand">
+            <img src='../static/images/healthhack-logo/HH_Logo.svg' alt='HealthHack Logo'>
+        </a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="currentchallenges.html" title="Current Challenges">Current Challenges</a></li>
+            <li><a href="previouschallenges.html" title="Previous Challenges">Previous Challenges</a></li>
+            <li><a href="sponsors.html" title="Sponsors">Sponsors</a></li>
+            <li><a href="organisers.html" title="Event Organisers">Event Organisers</a></li>
+            <li><a href="mailto:info@healthhack.com.au">Contact</a></li>
+            <li>
+              <ul class="nav nav-btn">
+                  <li><a href="mailto:info@healthhack.com.au"><button class="btn btn-primary">SUBMIT A CHALLENGE</button></a></li>
+                  <li><get-involved-button id="nav"></get-involved-button></li>
+                  <!-- <li><%= partial(:getInvolvedButton, :locals => { :id => "nav" }) %></li> -->
+              </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+</template>
+<script>
+  Polymer({
+    is: 'site-nav-bar',
+  });
+  </script>
+</dom-module>
+
+

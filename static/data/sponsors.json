@@ -1,0 +1,309 @@
+{
+    "ace" : {
+        "displayName": "The Australian Centre for Ecogenomics",
+        "href": "http://ecogenomic.org",
+        "img": "ace.png",
+        "text": "The Australian Centre for Ecogenomics was established in August 2010 at the University of Queensland in the School of Chemistry and Molecular Biosciences. It provides a focal point for sequence-based analysis of microbial communities and builds strength in this space not only in Queensland, but Australia as a whole.",
+        "location": ["brisbane"],
+        "scope": "community",
+        "type": "gold"
+    },
+    "agrf" : {
+        "displayName": "AGRF",
+        "href": "https://www.agrf.org.au",
+        "img": "agrf.png",
+        "text": "We believe in improving the quality of life through exceptional life science. Our mission is to empower Australia to be recognised for world-class innovation and leading edge genomics research.",
+        "location": ["brisbane"],
+        "scope": "community",
+        "type": "standard"
+    },
+    "aihw" : {
+        "displayName": "Australian Institute of Health and Welfare",
+        "href": "www.aihw.gov.au",
+        "img": "aihw.png",
+        "text":  "The Australian Institute of Health and Welfare (AIHW) is a major national agency set up by the Australian Government under the Australian Institute of Health and Welfare Act to provide reliable, regular and relevant information and statistics on Australia's health and welfare.",
+        "location": ["brisbane","perth","sydney","melbourne"],
+        "scope": "national",
+        "type": "gold"
+    },
+    "ssai" : {
+        "displayName": "Statistical Society of Australia",
+        "href": "http://www.statsoc.org.au",
+        "img": "ssai.png",
+        "text": "The Society was founded in 1962 as a national “umbrella” organisation to support and further the work of state statistical societies already in existence, to establish a national journal and newsletter and to host national conferences. The national Society now represents Australian and overseas statisticians with state branches in six states and territories providing the focus and organisation of local activities. The overall objective of the Society is to further the study, application and good practice of statistical theory and methods in all branches of learning and enterprise.",
+        "location": ["melbourne"],
+        "scope": "community",
+        "type": "standard"
+    },
+    "aws" : {
+        "displayName": "Amazon Web Services",
+        "href": "https://AWS.amazon.com",
+        "img": "aws.png",
+        "text": "Amazon Web Services provides a highly reliable, scalable, low-cost infrastructure platform in the cloud that powers hundreds of thousands of businesses in 190 countries around the world. You can be up and running and building your own applications in as little as 15 minutes.",
+        "location": ["sydney", "brisbane", "melbourne", "perth"],
+        "scope": "national",
+        "type": "gold"
+    },
+    "biomelbourne" : {
+        "displayName": "BioMelbourne Network",
+        "href": "http://www.biomelbourne.org/",
+        "img": "biomelbourne.png",
+        "text": "The BioMelbourne Network is a membership based, industry forum representing business leaders in biotechnology, medical technology and innovation industries in Victoria. The power of our network resides with our members, who are some of the largest life sciences companies in Australia. Our mission is to support, connect and enable growth of our sector, through networking and professional development events that provide access to industry intelligence and promote peer-to-peer knowledge exchange.",
+        "location": ["melbourne"],
+        "scope": "community",
+        "type": "gold"
+    },
+    "boomworks": {
+        "displayName": "Boomworks",
+        "href": "http://www.boomworks.com.au",
+        "img": "boomworks.png",
+        "text": "Boomworks is a team of diverse and talented individuals with deep insights into the behaviours and technologies driving the connected world. At Boomworks, we believe in uncovering insights and defining strategies, and shape them into new ideas to enable change in the digital realm. We believe in building authentic relationships and connecting businesses with our customers.We craft meaningful experiences that embody our beliefs. It's our knack of seeing the small details in the big picture that sets us apart from everyone else.",
+        "location": ["sydney"],
+        "scope": "community",
+        "type": "silver"
+    },
+    "chiasma" : {
+        "displayName": "Chiasma Health",
+        "href": "https://chiasma.com.au/",
+        "img": "chiasma.png",
+        "text": "Chiasma Health is an innovative medical and research software company. We create secure, web-based and customised software for the entire research pipeline - from data collection to manuscript production. Our tools and services are designed by experienced researchers and are compliant with Australian research data security and privacy guidelines.",
+        "location": ["melbourne"],
+        "scope": "community",
+        "type": "standard"
+    },
+    "csl" : {
+        "displayName": "CSL",
+        "href": "http://www.csl.com.au/",
+        "img": "csl.png",
+        "text": "CSL Limited is a global, specialty biopharmaceutical company that develops, manufactures and markets therapies to treat and prevent a range of human medical conditions.",
+        "location": ["melbourne"],
+        "scope": "community",
+        "type": "silver"
+    },
+    "curtin" : {
+        "displayName": "Curtin University",
+        "href": "http://www.curtin.edu.au",
+        "img": "curtin.png",
+        "text": "Curtin University has a mission to change minds, lives and the world through leadership, innovation and excellence in teaching and research.",
+        "location": ["perth"],
+        "scope": "community",
+        "type": "gold"
+    },
+    "data61" : {
+        "displayName": "Data61",
+        "href": "http://www.csiro.au/en/Research/D61",
+        "img": "data61.png",
+        "text": "Data61 is the largest data innovation group in Australia. Bringing together our Digital Productivity team and National ICT Australia (NICTA), we are unrivalled in our intellectual capital and our network with the global technology marketplace.",
+        "location": ["brisbane","perth","sydney","melbourne"],
+        "scope": "national",
+        "type": "gold"
+    },
+    "fishburners" : {
+        "displayName": "Fishburners",
+        "href": "http://fishburners.org",
+        "img": "fishburners.png",
+        "text": "Fishburners is more than just a coworking space, we’re a passionate community of startups. Our vision is to bring together the best startups in Australia and help grow the tech scene here in Sydney.",
+        "location": ["sydney"],
+        "scope": "community",
+        "type": "gold"
+    },
+    "garvan" : {
+        "displayName": "Garvan Institute",
+        "href": "http://www.garvan.org.au",
+        "img": "garvan.png",
+        "text": "The Garvan Institute of Medical Research is one of Australia’s leading biomedical research institutes, pioneering study into the most widespread diseases affecting our community today, including cancer, neurodegenerative and mental diseases, disorders of the immune system, diabetes and obesity, osteoporosis and other skeletal disorders.",
+        "location": ["sydney"],
+        "scope": "community",
+        "type": "gold"
+    },
+    "github" : {
+        "displayName": "Github",
+        "href": "https://github.com",
+        "img": "github.png",
+        "text": "GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers. Over three million people use GitHub to build amazing things together.",
+        "location": ["sydney", "brisbane", "melbourne", "perth"],
+        "scope": "national",
+        "type": "gold"
+    },
+    "hcf" : {
+        "displayName": "",
+        "href": "",
+        "img": "hcf.png",
+        "text": "",
+        "location": ["sydney", "brisbane", "melbourne", "perth"],
+        "scope": "national",
+        "type": "gold"
+        },
+    "hopgood" : {
+        "displayName": "Hopgood Ganim",
+        "href": "http://www.hopgoodganim.com.au",
+        "img": "hopgood.png",
+        "text": "HopgoodGanim Lawyers is a legal firm of trusted experts. Our lawyers stand at the intersection of technology and the law and are committed to promoting and protecting innovation. We understand your industry and ensure your interests are protected from every angle. Founded over 40 years ago, today we remain fiercely independent and proud of our sustained growth and ongoing success. We deliver exceptional commercially-focused legal advice to clients throughout Australia and internationally. We draw on the resources of over 280 staff across offices in Brisbane, Perth and Shanghai.",
+        "location": ["brisbane", "perth"],
+        "scope": "community",
+        "type": "gold"
+    },
+    "inkubator" : {
+        "displayName": "Inkubator",
+        "href": "http://inkubator.com.au",
+        "img": "inkubator.png",
+        "text": "Inkubator is a digital creative studio that innovates in the space where art, technology and social change converge to create digital solutions and experiences for the organisations and communities we work with. We partner with our clients on a journey of discovery and enlightenment and are committed to a with not for design philosophy, accessibility and universal design practices. Our team is excited and inspired by the potential for change digital solutions offer with a particular interest in the education, healthcare, science and research fields.",
+        "location": ["perth"],
+        "scope": "community",
+        "type": "gold"
+    },
+    "intel" : {
+        "displayName": "Intel",
+        "href": "http://www.intel.com.au",
+        "img": "intel.png",
+        "text": "Through computing innovation, we push the boundaries of smart and connected technology to make amazing experiences possible for every person on Earth. From powering the latest devices and the cloud you depend on, to driving policy, diversity, sustainability, and education, we create value for our stockholders, customers, and society.",
+        "location": ["sydney"],
+        "scope": "community",
+        "type": "gold"
+    },
+    "itoc" : {
+        "displayName": "ITOC",
+        "href": "http://www.itoc.com.au",
+        "img": "itoc.png",
+        "text": "We are cloud technology experts providing industry leading cloud services, advice and roadmaps for the proactive modernisation of information technology and business processes.",
+        "location": ["brisbane"],
+        "scope": "community",
+        "type": "gold"
+    },
+    "landgate":
+    {
+        "displayName": "WALIS/Landgate",
+        "href": "http://www.walis.wa.gov.au",
+        "img": "landgate.png",
+        "text": "WALIS drives innovative partnerships and works with business, academia and the community to make it easier to find, use and improve location information for WA. Landgate is a statutory authority accountable to the Minister for Lands Western Australia.",
+        "location": ["perth"],
+        "scope": "community",
+        "type": "gold"        
+    },
+    "lenovo" : {
+        "displayName": "Lenovo",
+        "href": "https://www.lenovo.com.au",
+        "img": "lenovo.png",
+        "text": "Lenovo is a global technology company providing an innovative, smart connected and infrastructure device portfolio for both businesses and consumers, offering a range of high-quality hardware from wearables and smartphones to tablets, PCs, servers, software and cloud services. Lenovo is the #1 PC vendor in the world, selling around five devices every second.",
+        "location": ["sydney", "brisbane", "melbourne", "perth"],
+        "scope": "national",
+        "type": "silver"
+    },
+    "mrci" : {
+        "displayName": "Murdoch Childrens Research Institute",
+        "href": "https://www.mcri.edu.au",
+        "img": "mrci.png",
+        "text": "Murdoch Childrens undertakes research into infant, child and adolescent health.  As the largest child health research institute in Australia, our 1500 researchers are working hard to translate the knowledge we create from our research into effective prevention, early intervention and treatments for children.  We strive for a healthier community, fewer sick kids visiting hospitals, and the best possible care for children who unfortunately become ill.",
+        "location": ["melbourne"],
+        "scope": "community",
+        "type": "silver"
+    },
+    "qcif" : {
+        "displayName": "QCIF",
+        "href": "http://www.qcif.edu.au",
+        "img": "qcif.png",
+        "text": "QCIF (the Queensland Cyber Infrastructure Foundation) provides the high-performance services, infrastructure and support required to achieve excellence in computation and data-driven collaborative research and its application in industry. QCIF operates with its members and partners delivering services to research throughout Queensland and increasingly via Commonwealth programs to the nation.",
+        "location": ["brisbane"],
+        "scope": "community",
+        "type": "silver"
+    },
+    "qldhealth" : {
+        "displayName": "QLD Health",
+        "href": "https://www.health.qld.gov.au/",
+        "img": "qldhealth.png",
+        "text": "Queensland Health is committed to providing healthcare that Queenslanders value. Our networked public health system delivers a range of safe, responsive and integrated services across the state—from hospital inpatient, outpatient and emergency services, to community and mental health services, aged care services, and public health and health promotion programs. By protecting and promoting the health and wellbeing of our communities now, we are supporting the development of a healthier Queensland for the future.",
+        "location": ["brisbane"],
+        "scope": "community",
+        "type": "silver"
+    },
+    "rcc" : {
+        "displayName": "RCC",
+        "href": "http://www.rcc.uq.edu.au",
+        "img": "rcc.png",
+        "text": "The Research Computing Centre (RCC), established in 2011, provides coordinated management and support of The University of Queensland’s sustained and substantial investment in eResearch.  The RCC is an innovative and multidisciplinary environment that supports research collaboration to facilitate discoveries in science and engineering, humanities, and social sciences, through advanced computation, data analysis and other digital research tools.",
+        "location": ["brisbane"],
+        "scope": "community",
+        "type": "silver"
+    },
+    "redhat" : {
+        "displayName": "Redhat",
+        "href": "http://www.redhat.com",
+        "img": "redhat.png",
+        "text": " Red Hat is at the forefront of open source software development for enterprise IT, with a broad portfolio of products and services for commercial markets.",
+        "location": ["brisbane","perth","sydney","melbourne"],
+        "scope": "national",
+        "type": "silver"
+    },
+    "rivercitylabs" : {
+        "displayName": "River City Labs",
+        "href": "http://www.rivercitylabs.net",
+        "img": "rivercitylabs.png",
+        "text": "River City Labs is passionate about supporting the folks we care about; those out there taking risks and working on the latest great ideas in the mobile, Internet, telecoms and technology space."        ,
+        "location": ["brisbane"],
+        "scope": "community",
+        "type": "gold"
+    },
+    "tanda" : {
+        "displayName": "TANDA",
+        "href": "https://www.tanda.co",
+        "img": "tanda.png",
+        "text": "Tanda was founded in 2013, like many Australian businesses; with a little common sense, a common goal and a bit of mateship. The aim was to build a tool that helps eliminate paper timesheets, time theft and data entry from payroll. The idea was all businesses should be able to focus on what they do best, without being shackled by the tediousness of payroll and administration. We’re a fast growing team that now helps tens of thousands of employees and employers every week completely automate attendance, rosters and industry awards in the cloud. We’re best known for our fear of paperwork.",
+        "location": ["brisbane"],
+        "scope": "community",
+        "type": "standard"
+    },
+    "telstra" : {
+        "displayName": "Telstra",
+        "href": "https://www.telstra.com.au",
+        "img": "telstra.png",
+        "text": "Telstra is Australia's leading telecommunications and information services company, offering a full range of communications services and competing in all telecommunications markets.",
+        "location": ["brisbane"],
+        "scope": "community",
+        "type": "silver"
+    },
+    "thoughtworks" : {
+        "displayName": "ThoughtWorks",
+        "href": "http://www.thoughtworks.com",
+        "img": "thoughtworks.png",
+        "text": "ThoughtWorks is a software company and a community of passionate, purpose-led individuals. We think disruptively to deliver technology to address our clients' toughest challenges, all while seeking to revolutionize the IT industry and create positive social change.",
+        "location": ["sydney", "brisbane", "melbourne", "perth"],
+        "scope": "national",
+        "type": "gold"
+    },
+    "trello" : {
+        "displayName": "Trello",
+        "href": "https://trello.com",
+        "img": "trello.png",
+        "text": "Trello is a collaboration tool that organizes your projects into boards. In one glance, Trello tells you what's being worked on, who's working on what, and where something is in a process.",
+        "location": ["brisbane","perth","sydney","melbourne"],
+        "scope": "national",
+        "type": "gold"  
+    },
+    "vptn" : {
+        "displayName": "VPTN",
+        "href": "http://platformtechnologies.org/",
+        "img": "vptn.png",
+        "text": "Established in 2009, the Victorian Platform Technologies Network (VPTN) plays a key role in connecting publicly-funded facilities in Victoria with industry and researchers. Through its online services - ARIN and PlatformConnect - VPTN is unique in offering a centralised, open and cross-institutional network of over 140 platform technologies across more than 30 institutions. The VPTN is an initiative supported by the Victorian Government, Biomedical Research Victoria and Monash University.",
+        "location": ["melbourne"],
+        "scope": "community",
+        "type": "gold"
+    },
+    "victoria" : {
+        "displayName": "Victorian Government",
+        "href": "http://www.vic.gov.au",
+        "img": "victoria.png",
+        "text": "The Victorian Government is responsible for public schools, health, policing, roads and traffic, public housing and business regulation. We develop and deliver policies, programs and services that support and enhance the wellbeing of all Victorians.",
+        "location": ["melbourne"],
+        "scope": "community",
+        "type": "gold"
+    },    
+    "yorkbutter" : {
+        "displayName": "York Butter Factory",
+        "href": "http://yorkbutterfactory.com",
+        "img": "yorkbutter.png",
+        "text": "The York Butter Factory is the premier co-working and incubation space for Melbourne's high-potential early-stage technology entrepreneurs. Established in 2011 inside an 1850s heritage listed space, York Butter Factory is home to startups with bold and global ambitions to change the world.",
+        "location": ["melbourne"],
+        "scope": "community",
+        "type": "silver"
+    }
+}

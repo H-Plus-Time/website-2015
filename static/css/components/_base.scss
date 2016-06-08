@@ -1,0 +1,332 @@
+//-----------------------------------------------------------------------------
+//  Custom base styles
+//
+
+.container-white-background {
+    background-color: white;
+}
+
+// 85% width container used on most pages
+.thin-container-normal {
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    padding: 40px 0 80px 0;
+    color: black;
+    .col-md-4, .col-xs-6 {
+        padding-top: 20px;
+    }
+}
+
+// Things in boxes on RHS
+.location-side {
+    background-color: #EAEBEC;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: lighter;
+    h3 {
+        font-weight: lighter;
+    }
+}
+
+// Used for RHS callouts
+.right-info-box {
+    background-color: #EAEBEC;
+    padding: 20px 20px;
+    text-align: center;
+    font-weight: lighter;
+    h3 {
+        font-weight: lighter;
+    }
+    border-bottom: 5px solid #c9c9c9;
+    margin-bottom: 20px;
+    .btn {
+        min-width: 137px;
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+// Text next to side boxes
+.text-side {
+    padding: 10px 20px;
+    text-align: left;
+    font-weight: lighter;
+    h3, h2 {
+        font-weight: lighter;
+    }
+    hr {
+        border-top: 1px dashed #ccc;
+    }
+    button {
+        float: right;
+    }
+    img {
+        border: .5px solid #ccc;
+        float:left;
+        height: 100px;
+        width: 150px;
+        margin-right: 20px;
+    }
+    img.sponsor {
+        height: auto;
+    }
+    .organiser-details {
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body, h1, h2, h3, h4, h4, h6, p, span, li, blockquote{font-family: 'Open Sans', sans-serif;}
+
+body {
+  background-color: #EAEBEC;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+a:focus {
+  outline: none;
+}
+
+.light-bg {
+    min-width: 100%;
+    background-color: #FFFFFF;
+}
+
+.navbar-brand {
+    height: initial;
+}
+
+.navbar-nav {
+  margin-top:15px;
+  a {
+    color: #FFFFFF;
+    font-size: 1em;
+  }
+}
+
+.navbar-default {
+  border: none;
+  background: #FFFFFF;
+  padding-top: 0px;
+}
+
+.btn {
+  color: #FFFFFF;
+  border-radius: 40px;
+  padding: 10px 5px;
+  min-width: 200px;
+  border: none;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+  color: #FFFFFF;
+}
+
+.btn-default {
+  background-color: #404141;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active  {
+  background-color: #000000;
+}
+
+.btn-primary {
+  background-color: $btn-default-color;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: $btn-defaul-hovert-color;
+}
+
+.btn-link {
+  color: $btn-default-color;
+}
+
+.btn-link:hover, .btn-link:focus, .btn-link:active  {
+  color: $btn-defaul-hovert-color;
+}
+
+a {
+  color: $btn-default-color;
+}
+
+a:hover {
+  color: $btn-defaul-hovert-color;
+}
+
+li .btn {
+  margin-top: -15px;
+}
+
+
+
+p{
+  font-size: 1.2em;
+  line-height: 1.6;
+
+}
+
+.taller-line-height {
+  line-height: 1.7;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+.font-light {
+  font-weight: 100;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+
+.carousel-indicators li {
+  background-color: #BDBDBD;
+  width: 10px !important;
+  height: 10px !important;
+
+}
+
+.carousel-indicators li.active {
+  background-color: #2375D2;
+  margin: 1px;
+}
+
+.carousel-control {
+  width: 5%;
+}
+
+.carousel-inner-left,
+.carousel-inner-right {
+  width: 50%;
+  display: inline-block;
+}
+
+
+.carousel-inner-right  {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: left;
+  vertical-align: middle;
+  transform: translateY(-50%);
+  padding: 0 5%;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+  outline: 0;
+
+  .glyphicon {
+    width: 40px;
+    height: 40px;
+    background-color: #EFF0F1;
+    border-radius: 100%;
+    padding: 4px 0;
+    color: black;
+    font-weight: 100;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+
+}
+
+.panel {
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 1em;
+  }
+
+  .carousel-inner-left,
+  .carousel-inner-right {
+    width: 100%;
+    display: block;
+  }
+
+  .carousel-inner-right  {
+    position: relative;
+    transform: none;
+    left: 0;
+    padding: 10px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .container-past-challenges {
+    .carousel-control {
+      width: 50%;
+    }
+
+  }
+  .carousel-control.left,
+  .carousel-control.right {
+
+    .glyphicon {
+      margin-top: 5px;
+    }
+
+    .glyphicon-chevron-left {
+      margin-left: 25%;
+    }
+
+    .glyphicon-chevron-right {
+      left: 20px;
+    }
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+}
+
+.dropdown-default {
+  min-width: 200px;
+
+  .dropdown-menu {
+    background-color: #404141;
+    min-width: 200px;
+  }
+
+  .dropdown-menu>li>a {
+    color: #ffffff;
+  }
+  .dropdown-menu>li>a:focus,
+  .dropdown-menu>li>a:hover {
+      background-color: #000000;
+  }
+
+}

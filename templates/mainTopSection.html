@@ -1,0 +1,32 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="main-top-section">
+<template>
+<div class="container-fluid top-container">
+    <div class="row">
+        <h1>A data hack for medical <br>research problems</h1>
+        <h3>Sydney, Melbourne, Brisbane & Perth</h3>
+        <h3>23 - 25 October 2015</h3>
+    </div>
+    <div class="row">
+        <h4 class="taller-line-height">A FREE weekend dedicated to solving problems that medical researchers face,
+        <br>whether you have a challenge yourself or want to donate your skills to the hack.</h4>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row row-involved">
+        <div class="col-md-6">
+            <submit-problem-callout></submit-problem-callout>
+        </div>
+        <div class="col-md-6">
+            <get-involved-callout></get-involved-callout>
+        </div>
+    </div>
+</div>
+</template>
+<script>
+    Polymer({
+        is: "main-top-section",
+    });
+</script>
+</dom-module>

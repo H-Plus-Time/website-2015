@@ -1,0 +1,23 @@
+<link rel="import" href="../bower_components/polymer/polymer.html"/>
+<link rel="import" href="getInvolvedButton.html"/>
+<dom-module id="get-involved-callout">
+<template>
+<div class="top-container-col">
+    <h2>Get involved, join the Health Hack in your city</h2>
+    <div class="top-container-text">
+        <p>Whether you’re a developer, UX designer, data analyst or researcher, we want you.</p>
+    </div>
+    <div class="clearfix">
+        <div class="top-container-dropdown">
+        <get-involved-button id="side"></get-involved-button>
+<!--         <%= partial(:getInvolvedButton, :locals => { :id => "side" }) %>
+ -->        </div>
+    </div>
+</div>
+</template>
+<script>
+	Polymer({
+		is: 'get-involved-callout'
+	});
+</script>
+</dom-module>

@@ -1,0 +1,43 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="sponsorList.html"/>
+<dom-module id="main-social-sponsors-section">
+<template>
+<script>
+    window.sponsor_names = [];
+    $(document).ready(function() {
+        load_sponsors(true, sponsor_names, "", "logos_only");
+
+        $(window).resize(function() {
+            load_sponsors(false, sponsor_names, "", "logos_only");
+        });
+    });
+</script>
+<div class="container-fluid container-social-sponsors">
+    <div class="row">
+        <div class="col-md-6 less-padding-centred">
+            <h3 class="sideoffset"><img class="social-logo" alt="Twitter logo" src="../static/images/misc/Twitter_logo_blue.png"> Tweets</h3>
+            <div class="row-social">
+                <a class="twitter-timeline min-height" height="375px" data-chrome="nofooter noheader noscrollbar transparent" href="https://twitter.com/search?q=%23healthhack%20AND%20from%3Acraigdbutt%20OR%20from%3Amscook%20OR%20from%3Aminillinim%20OR%20from%3Afctweedie%20OR%20from%3Asauramaia%20OR%20from%3Aokfnau%20OR%20from%3Arkstedman%20OR%20from%3ADrAndrewYap%20OR%20from%3Asixthforce%20OR%20from%3Aa_sean_fleming%20OR%20from%3Aalisonmarigold%20OR%20from%3AChrisChinch%20OR%20from%3ASirRustyroo%20OR%20from%3Aperrynfowler%20OR%20from%3AKathyReid%20OR%20from%3Apiawaugh%20OR%20from%3Adfflanders%20OR%20from%3ALeon_Vandenberg%20OR%20from%3Aannaleeanda%20OR%20from%3AJenniferSmithCo%20OR%20from%3Anicsmythe%20OR%20from%3AWeAreSydney%20OR%20from%3AWeMelbourne%20OR%20from%3Awepublichealth" data-widget-id="628202217263120389">Tweets about #healthhack AND from:craigdbutt OR from:mscook OR from:minillinim OR from:fctweedie OR from:sauramaia OR from:okfnau OR from:rkstedman OR from:DrAndrewYap OR from:sixthforce OR from:a_sean_fleming OR from:alisonmarigold OR from:ChrisChinch OR from:SirRustyroo OR from:perrynfowler OR from:KathyReid OR from:piawaugh OR from:dfflanders OR from:Leon_Vandenberg OR from:annaleeanda OR from:JenniferSmithCo OR from:nicsmythe OR from:WeAreSydney OR from:WeMelbourne OR from:wepublichealth</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <div class="col-footer"><a href="https://twitter.com/search?q=healthhack.com.au&src=typd" target="_blank">FOLLOW HEALTH HACK</a></div>
+            </div>
+        </div>
+        <div class="col-md-6 less-padding-centred">
+            <h3 class="sideoffset">Our Major Sponsors</h3>
+            <div class="row-sponsors">
+                <div class="clearfix min-height">
+                    <sponsors-list></sponsors-list>
+                    <!-- <%= partial(:sponsorList) %> -->
+                </div>
+                <div class="col-footer"><a href="sponsors.html" target="_blank">ALL SPONSORS</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+</template>
+<script>
+    Polymer({
+        is: "main-social-sponsors-section"
+    })
+</script>
+</dom-module>

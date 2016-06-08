@@ -1,0 +1,30 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="sponsor-record">
+<template>
+<div id="[[sponsor]]-block" class="col-md-4 col-sm-6 col-xs-12 sponsor-block-cn">
+    <div class="sponsor-block-inner">
+        <div id="[[sponsor]]-img-div">
+            <a id="[[sponsor]]-href" target="_blank" href="">
+                <img id="[[sponsor]]-img" alt="" class="sponsor-img" src="">
+            </a>
+        </div>
+    </div>
+</div>
+<script>
+// console.log([[sponsor]]);
+sponsor_names.push("[[sponsor]]");
+</script>
+</template>
+<script>
+	Polymer({
+		is: 'sponsor-record',
+        sponsor: {
+            type: String
+        },
+        ready: function() {
+            
+        }
+	})
+</script>
+</dom-module>

@@ -1,0 +1,42 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="get-involved-button">
+<template>
+<!--a href="#"><http://healthhack2015.eventbrite.com.au/"-->
+<div class="dropdown dropdown-default">
+  <button class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">GET INVOLVED
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="http://www.eventbrite.com.au/e/healthhack-2015-sydney-tickets-18105990505?aff=es2" target="_blank">Sydney</a></li>
+    <li><a href="https://www.eventbrite.com.au/e/healthhack-2015-melbourne-tickets-18920716372" target="_blank">Melbourne</a></li>                 
+    <li><a href="https://www.eventbrite.com.au/e/healthhack-2015-brisbane-tickets-17259371244" target="_blank">Brisbane</a></li>
+    <li><a href="https://www.eventbrite.com.au/e/healthhack-2015-perth-tickets-18649988618" target="_blank">Perth</a></li>
+  </ul>
+</div>
+<!--/a-->
+<script type="text/javascript">
+    $( document ).ready(function() {
+        $('.close-registration-link').click(function() {
+            var message_div = $("<div>", { html : "<strong>Registration opens soon</strong><br><br>As part of our registration process we'll be asking participants to tell us why they'd like to be involved in HealthHack and what they'd like to get out of the event. We believe that providing these responses will help participants to get in the right frame of mind in the lead up to the event. Collecting them helps us to better plan for the day. We promise to only use your answers for good, so start thinking up some really awesome answers now!<br>" });
+            var alert_div = $("<div>", { class: "alert alert-info fade in" });
+            var close = $("<a>", { href: "#",
+                                   class: "close",
+                                   'data-dismiss': "alert",
+                                   'aria-label': "close",
+                                   html: "&times;" });
+            alert_div.append(close);
+            alert_div.append(message_div);
+            $( document.body ).prepend(alert_div);
+
+            message_div.css("padding", "20px").css("padding-top", "15px").css("text-align", "center");
+            alert_div.css("width", '70%').css("position","absolute").css("z-index","5000").css("top","50%").css("left","50%").css("margin",(-(alert_div.height()/2))+"px 0 0 "+(-(alert_div.width()/2))+"px").css("z-index","10").css("position","fixed");
+        });
+    });
+</script>
+</template>
+<script>
+  Polymer({
+    is: 'get-involved-button'
+  });
+</script>
