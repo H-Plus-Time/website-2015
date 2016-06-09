@@ -1,0 +1,134 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="sponsorList.html"/>
+<link rel="import" href="submitProblemCallout.html"/>
+<link rel="import" href="getInvolvedCallout.html"/>
+
+<dom-module id="location-template">
+<template>
+<script>
+    window.sponsor_names = [];
+</script>
+<div class="container-white-background">
+    <div class$="container-fluid top-container-base top-container-[[site]]">
+        <div class="row">
+           <h1>[[site]]</h1>
+           <h3 id='loc-city-main'></h3>
+        </div>
+    </div>
+    <div class="thin-container-normal" style="padding-bottom: 0px;">
+        <div class="row">
+            <div class="col-md-9 text-side">
+                <h3>What To Expect</h3>
+                <p>HealthHack is a weekend data hack dedicated to problems that medical researchers face. Scientists often create vast amounts of data, but don’t always have good ways to analyse, visualise and communicate it. This weekend will bring together software developers, user experience designers, data analysts and visualisers working directly with researchers to create new, better tools.</p>
+                <h3>How It Works</h3>
+                <p>Before the hack weekend:</p>
+                <ol>
+                    <li>People <a href="mailto:info@healthhack.com.au">submit a challenge</a></li>
+                    <li>Coaches help problem owners prepare</li>
+                    <li>Participants get involved (see above)</li>
+                </ol>
+                <p>On the hack weekend:</p>
+                <ol>
+                    <li>Friday evening: Problem owners pitch to participants and teams self-assemble</li>
+                    <li>Saturday: Teams work to build solutions, with help from coaches</li>
+                    <li>Sunday morning: Teams work to build solutions, with help from coaches</li>
+                    <li>Sunday afternoon: Teams present their solutions, judging and prizes</li>
+                </ol>
+                <hr/>
+
+                <span id="site-faq"></span>
+
+                <h3>Frequently Asked Questions - Problem Owners</h3><br/>
+
+                <h4>Participants need special access to work on my problem. Can we set up generic accounts, download stuff, and prepare before the weekend?</h4>
+                <p>It may be much easier to do this on a weekday, so It’s a good idea to try accessing all the data and software as if you were new to it, a few weeks ahead of time. Be aware that any tools and software produced at the hack will be free and publicly available during and after the event. However, your data doesn’t need to be released or seen if there are reasons to kee­p it private. Do consider whether you can make it publicly available (if it isn’t already, of course). If you can’t release your data, your team would have to think about how to manage that as part of the solution. Keep in mind that the tools will be displayed afterwards; what other data might be used that shows how they work? Can we help you create dummy data for display or use?</p><br/>
+
+                <h4>But I have no idea what kind of problem I can bring! / My problems are different! / I have no idea what I’m doing!</h4>
+                <p>Not to worry. Speak to one of the organisers! We can usually help tease out something small enough that a group of people can solve over a weekend, but large enough that it would make a difference. Even if you think this is weird, have a chat with an organiser and see what’s possible.</p><br/>
+
+                <h4>I have lots of ideas! Can I bring them all to the hackathon?</h4>
+                <p>You can certainly bring more than one! You can pitch several ideas and ask a group to choose one, or suggest two groups work on different ones. We suggest no more than two problems per problem owner. If you have lots of ideas, we suggest you bring another scientist to the weekend to act as problem owner for some of them.</p><br/>
+
+                <h4>What if nobody wants to works on my problem?</h4>
+                <p>Sometimes it happens that an idea just does not get the attention it deserves, through no fault of anyone. Maybe there aren’t the right skills in the room, or there is more of an interest in something else. In that case you are welcome to stay and participate ­perhaps join another team and provide your expertise, or you are welcome to go home and have an unexpectedly free weekend.</p><br/>
+
+                <span id="owner-faq"></span>
+
+                <h3>Frequently Asked Questions - Participants</h3><br/>
+
+                <h4>What do I need to bring?</h4>
+                <p>A laptop and enthusiasm. We’ll have whiteboards, paper, sticky notes, sharpies etc. If you think of anything else that might be necessary, let us know as early as possible.</p><br/>
+
+                <h4>Can I use a result of a hackathon, code, ideas?</h4>
+                <p>All code and APIs must be available under an appropriately open license that allows reuse, commercial use, remixing and redistribution. As the owner of the code you can of course fork that code and commercialise if you want, but to be eligible for the competition, the codebase and demonstration submitted must be open sourced. All other content submitted must be Creative Commons BY licensed. The reason for the open licensing of code and content is because HealthHack is about useful outcomes that anyone can use and build on.</p><br/>
+
+                <h4>Will there be food?</h4>
+                <p>Yes! We will provide food and drinks over the weekend. Each city will be doing things slightly differently, but you’ll know ahead of time what to expect. We will be catering for vegetarians and those with lactose and gluten intolerances so please let us know when you register if there are other ways we can help look after you.</p><br/>
+
+                <span id="participant-faq"></span>
+
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="location-side">
+                        <h3>When</h3>
+                        <p>23 - 25 October 2015</p>
+                        <h3>Where</h3>
+                        <p id='loc-where-long'></p>
+                        <div id="map-canvas"></div>
+                        <h3>Contact</h3>
+                        <p id='loc-contact'></p>
+                    </div>
+                    <submit-problem-callout innerclass="right-info-box"></submit-problem-callout>
+                    <get-involved-callout innerclass="right-info-box"></get-involved-callout>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="sponsor-page" class="clearfix thin-container-normal" style="padding-top: 0px;">
+        <h3>Sponsors for the <span>[[site]]</span> event</h3>
+        <br>
+        <sponsors-list></sponsors-list>
+    </div>
+    <hr>                
+</div>
+</template>
+<script>
+    Polymer({
+        is: "location-template",
+        site: {
+            type: String
+        },
+        getSite: function() {
+            return this.site;
+        },
+        ready: function() {
+
+            // console.log(site);
+            var sponsor_names = window.sponsor_names;
+            var site = this.site;
+            $.get("../static/data/locations.json", function(data) {
+                console.log(site);
+                var site_data = data[site];
+                console.log(site_data);
+                initialize(site_data["where_coords"][0], site_data["where_coords"][1]);
+                $("#loc-where-long").html(site_data["where_readable"][0] + '<br>' + site_data["where_readable"][1] +'<br>' + site_data["where_readable"][2] );
+                $("#loc-contact").html(site_data["contact"].join("<br>"));
+                $("#loc-city-main").html(site_data["where_readable"][1]);
+
+                load_custom_faqs("site", site, site_data["faqs"]);
+                load_custom_faqs("participant", site, site_data["faqs"]);
+                load_custom_faqs("owner", site, site_data["faqs"]);
+            });
+            load_sponsors(true, sponsor_names, this.site, "location");
+
+    $(document).ready(function() {
+        // $(window).resize(function() {
+        //     load_sponsors(false, sponsor_names, this.site, "location");
+        // });
+    });
+        }
+    });
+</script>
+</dom-module>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Previous Challenges
+    </title>
+    <link href="header.html" rel="import"/>
+    <link href="siteNavBar.html" rel="import"/>
+</head>
+<body>
+<site-nav-bar></site-nav-bar>
+
+<script>
+    $( document ).ready(function() {
+        load_challenges(2014);
+    });    
+</script>
+<div class="container-white-background">
+    <div class="top-container-base top-container-challenges">
+        <div class="row">
+           <h1>Previous Challenges</h1>
+           <h3>View previous years problems and submit your own</h3>
+        </div>
+    </div>
+    <div class="thin-container-normal">
+        <div class="row">
+            <div class="col-md-9 text-side">
+                <div id="challenge-list">
+                    Search Challenges: <input class="search" placeholder="Search" />
+                    <hr/>
+                    <div class="list" >
+                        <!-- template for each challenge item in the list -->
+                        <div class="challenge-row" id="challenge-row-template">
+                            <div class="clearfix">
+                                <h2 class="name">Name</h2>
+                                <p class="city">
+                                    <span>City</span> |
+                                    <a href="organisation">Organisation</a>
+                                </p>
+                                <p class="summary">Description</p>
+                                <div class="row">
+                                    <div id="challenge-page-container" class="container-white-background" style="display: none;">
+                                        <div class="challenge-container">
+                                            <div class="challenge-data">
+                                                <div class="clearfix challenge-title">
+                                                    <div><img src='../static/images/sponsors/garvan.png' class='sponsor' alt='Garvan Institute'></div>
+                                                    <div class="organiser-details">
+                                                        <p>Presented by Example A and Example B</p>
+                                                        <a href="organisation"><b>Organisation</b></a>
+                                                    </div>
+                                                </div>
+                                                <div class="challenge-details-panel">
+                                                    <h3>The problem</h3>
+                                                    <p class="description">TBA</p>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>     
+                                <div class="row challenge-links"></div>
+                            </div>
+                            <hr/>
+                        </div>
+                        <!-- end template -->
+                    </div>
+                    <div class="pagination-container">
+                        <span class="pagination"></span>
+                    </div>
+                </div>
+            </div>
+
+            <script src="../static/js/load_challenges.js"></script>
+            <div class="col-md-3">
+                <<submit-problem-callout innerclass="right-info-box"></submit-problem-callout>
+                <div class="quote-side">
+                    <div class="circular-centered" style="background-image: url('../static/images/misc/top-image.jpg')"></div>
+                    <div class="quotes">Health Hack demonstrates how much can be achieved when the spirit of openness is embraced and people work together to deliver an outcome.</div>
+                    <p>Dr Ben Fulcher<br>
+                        Monash University</p>
+                    <div id="triangle-down"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

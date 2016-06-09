@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-    <!-- Layout for the langing page -->
-    <head>
-        <title>Health Hack 2016 - Sponsors</title>
-        <link href="header.html" rel="import"/>
-        <link href="sponsorList.html" rel="import"/>
-
-    </head>
-
+<!-- Layout for the langing page -->
+<head>
+    <title>
+        Health Hack 2016 - Sponsors
+    </title>
+    <link href="header.html" rel="import"/>
+    <link href="sponsorList.html" rel="import"/>
+    <link href="siteNavBar.html" rel="import"/>
+</head>
 <body>
     <script>
         window.sponsor_names = [];
@@ -16,20 +17,32 @@
             $(window).resize(function() {
                 load_sponsors(false, sponsor_names, "", "main");
             });
-        });    
+        });
     </script>
-    <div id="sponsor-page" class="sponsor-section container-white-background">
-    <div class="top-container-base top-container-sponsors">
-        <div class="row">
-            <h1>Sponsors</h1>
-            <h3>The companies that make a difference</h3>
+    <div class="light-bg">
+        <div class="container light-bg">
+            <div class="header">
+            </div>
+            <site-nav-bar>
+            </site-nav-bar>
         </div>
     </div>
-    <div class="clearfix thin-container-normal">
-        <sponsors-list></sponsors-list>
-    </div>
-    <sponsor-callout></sponsor-callout>
+    <div class="sponsor-section container-white-background" id="sponsor-page">
+        <div class="top-container-base top-container-sponsors">
+            <div class="row">
+                <h1>
+                    Sponsors
+                </h1>
+                <h3>
+                    The companies that make a difference
+                </h3>
+            </div>
+        </div>
+        <div class="clearfix thin-container-normal">
+            <sponsors-list>
+            </sponsors-list>
+        </div>
+        <sponsor-callout>
+        </sponsor-callout>
     </div>
 </body>
-</html>
-

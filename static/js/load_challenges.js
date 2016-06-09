@@ -1,6 +1,6 @@
 load_challenges = function(target_year) { 
     var sheetsu = (target_year >= 2015);
-	$.get(sheetsu ? "https://sheetsu.com/apis/bee3ab30" : 'data/challenges.json', function(data) {
+	$.get(sheetsu ? "https://sheetsu.com/apis/bee3ab30" : '../static/data/challenges.json', function(data) {
         if (sheetsu && !data.success) {
             alert("Couldn't load challenges, status " + data.status);
             console.log(data);
@@ -35,7 +35,7 @@ load_challenges = function(target_year) {
 				panel.find("#challenge-page-container").attr("id", custom_id);
 
 				if (challenge.organisationImg) {
-                    var prefix = (challenge.organisationImg.match(/^http/) ? '' : 'images/');
+                    var prefix = (challenge.organisationImg.match(/^http/) ? '' : '../static/images/');
 					panel.find("div.challenge-title img.sponsor").attr("src", prefix + challenge.organisationImg);
 					panel.find("div.challenge-title img.sponsor").attr("alt", challenge.organisation);
 				}
