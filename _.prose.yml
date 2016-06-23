@@ -1,2 +1,13 @@
 prose:
-  rooturl: '_descriptions'
+    rooturl: '_descriptions'
+    ignore:
+      - source
+      - static
+      - templates
+      - bower.json
+      - Gemfile
+      - config.rb
+      - .gitignore
+      - Gemfile.lock
+      - README.md
+      - _.prose.yml
