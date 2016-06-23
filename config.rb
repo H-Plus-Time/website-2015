@@ -44,6 +44,7 @@
 #     "Helping"
 #   end
 # end
+set :data_dir, 'source/data'
 
 set :css_dir, 'stylesheets'
 
