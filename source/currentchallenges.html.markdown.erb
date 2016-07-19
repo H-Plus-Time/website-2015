@@ -6,12 +6,13 @@ title: This Years Challenges
     <link rel="import" href="/bower_components/polymer/polymer.html">
     <link rel="import" href="/bower_components/iron-collapse/iron-collapse.html">
     <link rel="import" href="/bower_components/iron-ajax/iron-ajax.html">
-
+    <link rel="import" href="/bower_components/juicy-html/juicy-html.html">
+    <link rel='import' href="/challenge-wrapper.html">
 </head>
 <script>
     $( document ).ready(function() {
-        load_challenges(2015);
-    });    
+        // load_challenges(2015);
+    });
 </script>
 <div class="container-white-background">
     <div class="top-container-base top-container-challenges">
@@ -21,88 +22,11 @@ title: This Years Challenges
         </div>
     </div>
 
-    
     <div class="thin-container-normal">
         <div class="row">
             <div class="col-md-9 text-side">
-                <div id="challenge-list">
-                    Search Challenges: <input class="search" placeholder="Search" />
-                    <hr/>
-                    <div class="list" >
-                        <!-- template for each challenge item in the list -->
-                        <template is="dom-bind" id='t'>
-                        <iron-ajax auto url="data/challenges.json" handle-as="json" last-response="{{things}}"></iron-ajax>
-                            <template is="dom-repeat" items="{{things.challenges}}">
-                                <template is="dom-if" if="{{item.winner}}">
-                                    <span class="clearfix challenge-winner-label">
-                                    <span class="glyphicon glyphicon-star"></span><span>{{item.winner}}</span>
-                                    </span>
-                                </template>
-                                <div class="challenge-row" id="challenge-row-template">
-                                    <div class="clearfix">
-                                        <h2 class="name">{{item.name}}</h2>
-                                        <p class="city">
-                                            <span>{{item.city}}</span>&nbsp;(<span>{{item.year}}</span>) |
-                                            <template is="dom-if" if="{{item.organisation}}">
-                                                <a href="{{item.organisationLink}}">{{item.organisation}}</a>
-                                            </template>
-                                            <template is="dom-if" if="!{{item.organisation}}">
-                                                <a href="{{item.organisationLink}}">Supported by Health Hack</a>
-                                            </template>
-                                        </p>
-                                        <p class="summary">{{item.summary}}</p>
-                                        <div class="row">
-                                            <iron-collapse>
-                                            <div id="challenge-page-container-{{index}}" class="container-white-background">
-                                                <div class="challenge-container">
-                                                    <div class="challenge-data">
-                                                        <div class="clearfix challenge-title">
-                                                            <div>
-                                                                <template is="dom-if" if="{{item.organisationImg}}">
-                                                                    <img alt="{{item.organisation}}" src="images/{{item.organisationImg}}"/>
-                                                                </template>
-                                                                <template is="dom-if" if="{{!item.organisationImg}}">
-                                                                    <img alt="Health-Hack" src="images/healthhack-logo/HH_Logo.svg"/>
-                                                                </template>
-                                                            </div>
-                                                            <div class="organiser-details">
-                                                                <p>{{item.presenters}}</p>
-                                                                <a href="{{item.organisationLink}}"><b>{{item.organisation}}</b></a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="challenge-details-panel">
-                                                            <h3>The problem</h3>
-                                                            <p class="description">{{item.description}}</p>
-                                                            <br>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div> 
-                                            </iron-collapse>
-                                        </div>     
-                                        <div class="row challenge-links">
-                                            <template is="dom-if" if="{{item.workingDemoLink}}">
-                                                <a class="workingDemoLink" href="{{item.workingDemoLink}}">
-                                                    <button class="btn-primary btn grey-btn">WORKING DEMO</button>
-                                                </a>
-                                            </template>
-                                            <template is="dom-if" if="{{item.description}}">
-                                                <div class="detailsLink">
-                                                    <button class="btn-primary btn white-btn" onclick="this.closest('div.clearfix').querySelector('iron-collapse').toggle()">DETAILS</button>
-                                                </div>
-                                            </template>
-                                        </div>
-                                    </div>
-                                    <hr/>
-                                </div>
-                            </template>
-                        </template>
-                        <!-- end template -->
-                    </div>
-                    <div class="pagination-container">
-                        <span class="pagination"></span>
-                    </div>
-                </div>
+            <challenge-wrapper year="2015"></challenge-wrapper>
+
             </div>
 
             
@@ -119,14 +43,3 @@ title: This Years Challenges
         </div>
     </div>
 </div>
-<script>
-    window.addEventListener('WebComponentsReady', function(e) {
-        HTMLImports.whenReady(function() {
-            template = document.querySelector('#t');
-            // $.get('data/challenges.json', function(data) {
-            //     console.log(data);
-            //     template.things = JSON.parse(data);
-            // })
-        });
-    });
-</script>

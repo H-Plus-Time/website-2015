@@ -18,6 +18,7 @@
   "dependencies": {
     "polymer": "Polymer#^1.5.0",
     "iron-collapse": "^1.1.0",
-    "iron-ajax": "^1.2.0"
+    "iron-ajax": "^1.2.0",
+    "marked-element": "^1.1.3"
   }
 }

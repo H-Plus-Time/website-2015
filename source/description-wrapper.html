@@ -1,0 +1,21 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/bower_components/marked-element/marked-element.html">
+
+<dom-module is="description-wrapper">
+	<template>
+		<marked-element markdown="{{text-content}}">
+			<div class="markdown-html">
+			</div>
+		</marked-element>
+	</template>
+	<script>
+		Polymer({
+			is: 'description-wrapper',
+			properties: {
+				text_content: {
+					type: String
+				}
+			}
+		})
+	</script>
+</dom-module>

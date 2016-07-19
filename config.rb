@@ -56,6 +56,8 @@ set :partials_dir, 'partials'
 
 set :relative_links, true 
 
+# ignore 'description-wrapper.html'
+
 # activate :directory_indexes
 # page "/bower_components/**", :directory_index => false
 

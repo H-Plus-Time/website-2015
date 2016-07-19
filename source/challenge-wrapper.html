@@ -1,0 +1,164 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel='import' href="/description-wrapper.html">
+
+<dom-module id="challenge-wrapper">
+    <template>
+        <div id="challenge-list">
+
+        Search Challenges: <input class="search" placeholder="Search" value="{{filterVal::input}}"/>
+        <hr/>
+        <div class="list" >
+            <!-- template for each challenge item in the list -->
+            
+            <!-- <iron-ajax auto url="data/challenges.json" handle-as="json" last-response="{{challenges}}"></iron-ajax> -->
+            
+            <!-- end template -->
+
+        <template filter="{{computeFilter(filterVal)}}" is="dom-repeat" items="{{challenges}}">
+            <template if="{{item.winner}}" is="dom-if">
+                <span class="clearfix challenge-winner-label">
+                    <span class="glyphicon glyphicon-star">
+                    </span>
+                    <span>
+                        {{item.winner}}
+                    </span>
+                </span>
+            </template>
+            <div class="challenge-row" id="challenge-row-template">
+                <div class="clearfix">
+                    <h2 class="name">
+                        {{item.name}}
+                    </h2>
+                    <p class="city">
+                        <span>
+                            {{item.city}}
+                        </span>
+                        (
+                        <span>
+                            {{item.year}}
+                        </span>
+                        ) |
+                        <template if="{{item.organisation}}" is="dom-if">
+                            <a href="{{item.organisationLink}}">
+                                {{item.organisation}}
+                            </a>
+                        </template>
+                        <template if="{{!item.organisation}}" is="dom-if">
+                            <a href="{{item.organisationLink}}">
+                                Supported by Health Hack
+                            </a>
+                        </template>
+                    </p>
+                    <p class="summary">
+                        {{item.summary}}
+                    </p>
+                    <div class="row">
+                        <iron-collapse>
+                            <div class="container-white-background" id="challenge-page-container-{{index}}">
+                                <div class="challenge-container">
+                                    <div class="challenge-data">
+                                        <div class="clearfix challenge-title">
+                                            <div>
+                                                <template if="{{item.organisationImg}}" is="dom-if">
+                                                    <img alt="{{item.organisation}}" src="/images/{{item.organisationImg}}"/>
+                                                </template>
+                                                <template if="{{!item.organisationImg}}" is="dom-if">
+                                                    <img alt="Health-Hack" src="images/healthhack-logo/HH_Logo.svg"/>
+                                                </template>
+                                            </div>
+                                            <div class="organiser-details">
+                                                <p>
+                                                    {{item.presenters}}
+                                                </p>
+                                                <a href="{{item.organisationLink}}">
+                                                    <b>
+                                                        {{item.organisation}}
+                                                    </b>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="challenge-details-panel">
+                                            <h3>
+                                                The problem
+                                            </h3>
+                                            <description-wrapper text-content="{{item.description}}">
+                                            </description-wrapper>
+                                            <br>
+                                            </br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </iron-collapse>
+                    </div>
+                    <div class="row challenge-links">
+                        <template if="{{item.workingDemoLink}}" is="dom-if">
+                            <a class="workingDemoLink" href="{{item.workingDemoLink}}">
+                                <button class="btn-primary btn grey-btn">
+                                    WORKING DEMO
+                                </button>
+                            </a>
+                        </template>
+                        <template if="{{item.description}}" is="dom-if">
+                            <div class="detailsLink">
+                                <button class="btn-primary btn white-btn" onclick="this.closest('div.clearfix').querySelector('iron-collapse').toggle()">
+                                    DETAILS
+                                </button>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                <hr/>
+            </div>
+        </template>
+                    </div>
+            <div class="pagination-container">
+                <span class="pagination"></span>
+            </div>
+        </div>
+        
+    </template>
+    <script>
+            Polymer({
+                is: 'challenge-wrapper',
+                properties: {
+                    challenges: {
+                        type: Array
+                    },
+                    year: {
+                        type: Number,
+                        notify: true,
+                        reflectToAttribute: true
+                    }
+                },
+                computeFilter: function(filterVal) {
+                    if (!filterVal) {
+                      return null;
+                    } else {
+                      var instFilterVal = filterVal.toLowerCase();
+                      return function(challenge) {
+                        var name = challenge.name.toLowerCase();
+                        return (name.indexOf(instFilterVal) != -1)
+                      }.bind(this);
+                    }
+                  },
+                attached: function() {
+                    var sheetsu = this.year >= 2015;
+                    fetch(sheetsu ? "https://sheetsu.com/apis/bee3ab30" : 'data/challenges.json')
+                    .then( (resp) => { return resp.json() })
+                    .then(function(data) {
+                        if (sheetsu && !data.success) {
+                            alert("Couldn't load challenges, status " + data.status);
+                            console.log(data);
+                            return false;
+                        }
+                        console.log(data);
+                        console.log(sheetsu);
+                        console.log(this.year);
+                        var challenges = sheetsu ? data.result : data.challenges;
+                        this.challenges = challenges.filter(function(item) { return Number(item.year) == this.year}.bind(this));
+                    }.bind(this));                    
+                }
+            })
+        </script>
+</dom-module>
