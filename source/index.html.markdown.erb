@@ -11,7 +11,7 @@ layout: home
             HealthHack is a product-building event that runs from a Friday evening through to Sunday. Teams work on problems that have been submitted by Problem Owners - typically medical researchers, medical organisations, hospitals or government— but they could come from anyone who has a health-related problem they want to solve. The HealthHack kicks off on Friday 23rd October at 6pm and continues all day and night on Saturday 24th concluding in the evening on Sunday 25th. Festivities wrap up on the Sunday at 4pm with judging and prizes.
         </p>
     </div>
-    <div id="event-regions" class="row event-regions"></div>
+    <location-square-grid></location-square-grid>
 </div>
 
 <div class="container-fluid container-past-challenges">
@@ -62,23 +62,23 @@ layout: home
 </div>
 <script>
     // build the mini location squares
-    $.get("./data/locations.json", function(data) {
-        $.each (Object.keys(data), function(index, city) {
-            var $loc_col_div = $("<div>", { class: "col-sm-3" });
-            var $loc_href = $("<a>", { href: data[city]["page"], class: "event-region" });
-            var $loc_city_image = $("<img>", { src: data[city]["image-sm"], class: "event-region-image" });
-            var $loc_shad_span = $("<span>", { class: "event-region-shadow" });
-            var $loc_text_span = $("<span>", { class: "event-region-text" });
-            $loc_text_span.append($("<h2>", { html: city, class: "font-light" }));
-            $loc_text_span.append($("<p>", { html: data[city]["where_readable"][0] }));
-            $loc_text_span.append($("<div>", { html: "Learn More", class: "btn-link" }));
-            $loc_href.append($loc_city_image);
-            $loc_href.append($loc_shad_span);
-            $loc_href.append($loc_text_span);
-            $loc_col_div.append($loc_href);
-            $("#event-regions").append($loc_col_div);
-        });
-    });
+    // $.get("./data/locations.json", function(data) {
+    //     $.each (Object.keys(data), function(index, city) {
+    //         var $loc_col_div = $("<div>", { class: "col-sm-4" });
+    //         var $loc_href = $("<a>", { href: data[city]["page"], class: "event-region" });
+    //         var $loc_city_image = $("<img>", { src: data[city]["image-sm"], class: "event-region-image" });
+    //         var $loc_shad_span = $("<span>", { class: "event-region-shadow" });
+    //         var $loc_text_span = $("<span>", { class: "event-region-text" });
+    //         $loc_text_span.append($("<h2>", { html: city, class: "font-light" }));
+    //         $loc_text_span.append($("<p>", { html: data[city]["where_readable"][0] }));
+    //         $loc_text_span.append($("<div>", { html: "Learn More", class: "btn-link" }));
+    //         $loc_href.append($loc_city_image);
+    //         $loc_href.append($loc_shad_span);
+    //         $loc_href.append($loc_text_span);
+    //         $loc_col_div.append($loc_href);
+    //         $("#event-regions").append($loc_col_div);
+    //     });
+    // });
 
     $(window).load(function() {
         equalheight('.row .top-container-col');

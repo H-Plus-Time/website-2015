@@ -1,11 +1,18 @@
 <link rel="import" href="/bower_components/polymer/polymer.html">
 <link rel='import' href="/description-wrapper.html">
+<link rel="import" href="/bower_components/paper-input/paper-input.html">
+<script src="/bower_components/underscore/underscore-min.js"></script>
 
 <dom-module id="challenge-wrapper">
     <template>
+        <style>
+            .custom_search {
+                width: 200px;
+            }
+        </style>
         <div id="challenge-list">
 
-        Search Challenges: <input class="search" placeholder="Search" value="{{filterVal::input}}"/>
+        <paper-input class="custom_search" label="Search Challenges" value="{{filterVal::input}}"></paper-input>
         <hr/>
         <div class="list" >
             <!-- template for each challenge item in the list -->
@@ -14,7 +21,10 @@
             
             <!-- end template -->
 
-        <template filter="{{computeFilter(filterVal)}}" is="dom-repeat" items="{{challenges}}">
+        <template is="dom-repeat"
+        filter="{{computeFilter(filterVal)}}"
+        initial-count="5"
+        items="{{challenges}}">
             <template if="{{item.winner}}" is="dom-if">
                 <span class="clearfix challenge-winner-label">
                     <span class="glyphicon glyphicon-star">
@@ -60,7 +70,7 @@
                                         <div class="clearfix challenge-title">
                                             <div>
                                                 <template if="{{item.organisationImg}}" is="dom-if">
-                                                    <img alt="{{item.organisation}}" src="/images/{{item.organisationImg}}"/>
+                                                    <img alt="{{item.organisation}}" src="{{item.organisationImg}}"/>
                                                 </template>
                                                 <template if="{{!item.organisationImg}}" is="dom-if">
                                                     <img alt="Health-Hack" src="images/healthhack-logo/HH_Logo.svg"/>
@@ -129,6 +139,10 @@
                         type: Number,
                         notify: true,
                         reflectToAttribute: true
+                    },
+                    filterVal: {
+                        type: String,
+                        value: function() { return ""; }
                     }
                 },
                 computeFilter: function(filterVal) {

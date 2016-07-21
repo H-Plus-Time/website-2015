@@ -41,9 +41,21 @@
 	"Melbourne" : {
 		"where_readable" : ["ThoughtWorks Melbourne","23/303 Collins St","Melbourne VIC 3000"],
 		"where_coords" : [-37.816685, 144.963967],
-		"contact" : ["Fiono Tweedie"],
+		"contact" : ["David Ma", "Frederick Michna", "Nicholas Roberts"],
 		"image-sm" : "images/locations/melbourne.png",
 		"page": "melbourne.html",
+		"faqs" : {
+			"site" : [],
+			"participant" : [],
+			"owner" : [] 
+			}
+	},
+	"Canberra" : {
+		"where_readable": ["TBA", "TBA", "TBA"],
+		"where_coords": [-35.2809, 149.1300],
+		"contact" : ["Karmen Condic-Jurkic"],
+		"image-sm" : "images/locations/canberra.jpeg",
+		"page" : "canberra.html",
 		"faqs" : {
 			"site" : [],
 			"participant" : [],
